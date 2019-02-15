@@ -4,8 +4,24 @@
     
     <url>
     
+      <loc>https://keirancantilina.github.io/project/conductivity-sensor/</loc>
+      <lastmod>2019-02-15T00:00:00+01:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>https://keirancantilina.github.io/publication/soil-ecoli-manure/</loc>
       <lastmod>2018-12-07T00:00:00+01:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://keirancantilina.github.io/publication/masters-thesis/</loc>
+      <lastmod>2018-08-01T00:00:00+02:00</lastmod>
     </url>
     
   
@@ -36,14 +52,6 @@
     
     <url>
     
-      <loc>https://keirancantilina.github.io/project/test-project/</loc>
-      <lastmod>2011-12-31T00:00:00+01:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
       <loc>https://keirancantilina.github.io/</loc>
       <lastmod>2019-02-15T00:00:00+01:00</lastmod>
       <priority>0</priority>
@@ -62,6 +70,15 @@
     
     <url>
     
+      <loc>https://keirancantilina.github.io/publication_types/4/</loc>
+      <lastmod>2018-08-01T00:00:00+02:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>https://keirancantilina.github.io/categories/</loc>
       <priority>0</priority>
     </url>
@@ -71,7 +88,7 @@
     <url>
     
       <loc>https://keirancantilina.github.io/project/</loc>
-      <lastmod>2011-12-31T00:00:00+01:00</lastmod>
+      <lastmod>2019-02-15T00:00:00+01:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -97,8 +114,8 @@
     
     <url>
     
-      <loc>https://keirancantilina.github.io/tags/testing/</loc>
-      <lastmod>2011-12-31T00:00:00+01:00</lastmod>
+      <loc>https://keirancantilina.github.io/tags/electrical-engineering/</loc>
+      <lastmod>2019-02-15T00:00:00+01:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -106,8 +123,35 @@
     
     <url>
     
-      <loc>https://keirancantilina.github.io/tags/tests/</loc>
-      <lastmod>2011-12-31T00:00:00+01:00</lastmod>
+      <loc>https://keirancantilina.github.io/tags/electronic-design/</loc>
+      <lastmod>2019-02-15T00:00:00+01:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://keirancantilina.github.io/tags/hydrology/</loc>
+      <lastmod>2019-02-15T00:00:00+01:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://keirancantilina.github.io/tags/instrumentation/</loc>
+      <lastmod>2019-02-15T00:00:00+01:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://keirancantilina.github.io/tags/sensors/</loc>
+      <lastmod>2019-02-15T00:00:00+01:00</lastmod>
       <priority>0</priority>
     </url>
     

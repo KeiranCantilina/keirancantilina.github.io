@@ -11,11 +11,58 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Contactless Water Conductivity Sensor</title>
+      <link>https://keirancantilina.github.io/project/conductivity-sensor/</link>
+      <pubDate>Fri, 15 Feb 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://keirancantilina.github.io/project/conductivity-sensor/</guid>
+      <description>
+
+&lt;h1 id=&#34;timeline&#34;&gt;Timeline&lt;/h1&gt;
+
+&lt;p&gt;Jan 2017 - Jun 2018&lt;/p&gt;
+
+&lt;h1 id=&#34;project-description&#34;&gt;Project Description&lt;/h1&gt;
+
+&lt;p&gt;This project was for my Masters thesis at the University of Minnesota. The objective of this project was to develop a cheap and more rugged alternative to conventional water conductivity sensors, which are often susceptible to corrosion and fouling despite being quite expensive. This flaw exists because water conductivity is conventionally inferred by measuring the electrical resistivity of the water, which requires the direct contact of metallic electrodes with the water under test. I have avoided this problem in my design by measuring electrical impedance instead of electrical resistance. Thus, the sensor can use electrodes insulated from the water in an arrangement similar to a parallel-plate capacitor.&lt;/p&gt;
+
+&lt;p&gt;After coming up with the operating principle of the sensor, I designed, simulated, built, and characterized various prototypes. Prototypes were calibrated by comparison with a commercial conductivity sensor in saline solutions of various concentrations. The final prototype I presented at my thesis defense was paired with a commercial microcontroller/DDS board and was capable of processing the raw signal from the sensor and logging data in real units.&lt;/p&gt;
+
+&lt;h1 id=&#34;project-links&#34;&gt;Project Links&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/KeiranCantilina/Contactless_Conductivity_Sensor&#34; target=&#34;_blank&#34;&gt;Github repo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://conservancy.umn.edu/handle/11299/200148&#34; target=&#34;_blank&#34;&gt;Full text of my thesis&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;acknowledgements&#34;&gt;Acknowledgements&lt;/h1&gt;
+
+&lt;p&gt;Thanks to Dan Furuta for help with testing and troubleshooting during the iterative design process, and for lending me his vintage impedance analyzer.
+ Thanks to Hanna Lin for moral support, without which this project would have been impossible.&lt;/p&gt;
+
+&lt;h1 id=&#34;project-photos&#34;&gt;Project Photos&lt;/h1&gt;
+
+&lt;p&gt;&lt;img src=&#34;0215181346.jpg&#34; alt=&#34;photo1&#34; /&gt;
+&lt;img src=&#34;0215181346b.jpg&#34; alt=&#34;photo2&#34; /&gt;
+&lt;img src=&#34;1121171239a.jpg&#34; alt=&#34;photo2&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Absence of genetic selection in a pathogenic Escherichia coli strain exposed to the manure-amended soil environment</title>
       <link>https://keirancantilina.github.io/publication/soil-ecoli-manure/</link>
       <pubDate>Fri, 07 Dec 2018 00:00:00 +0100</pubDate>
       
       <guid>https://keirancantilina.github.io/publication/soil-ecoli-manure/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The Development of a Novel Capacitive Water Conductivity Sensor</title>
+      <link>https://keirancantilina.github.io/publication/masters-thesis/</link>
+      <pubDate>Wed, 01 Aug 2018 00:00:00 +0200</pubDate>
+      
+      <guid>https://keirancantilina.github.io/publication/masters-thesis/</guid>
       <description></description>
     </item>
     
@@ -26,42 +73,6 @@
       
       <guid>https://keirancantilina.github.io/publication/gflv-satellite/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>Temporary test project</title>
-      <link>https://keirancantilina.github.io/project/test-project/</link>
-      <pubDate>Sat, 31 Dec 2011 00:00:00 +0100</pubDate>
-      
-      <guid>https://keirancantilina.github.io/project/test-project/</guid>
-      <description>
-
-&lt;h1 id=&#34;timeline&#34;&gt;Timeline&lt;/h1&gt;
-
-&lt;p&gt;blah blah&lt;/p&gt;
-
-&lt;h1 id=&#34;project-goal&#34;&gt;Project Goal&lt;/h1&gt;
-
-&lt;p&gt;The goal of this project was to test stuff&lt;/p&gt;
-
-&lt;h1 id=&#34;project-description&#34;&gt;Project Description&lt;/h1&gt;
-
-&lt;p&gt;Description of project here&lt;/p&gt;
-
-&lt;h1 id=&#34;project-photos&#34;&gt;Project Photos&lt;/h1&gt;
-
-&lt;p&gt;Photos here&lt;/p&gt;
-
-&lt;h1 id=&#34;project-links&#34;&gt;Project Links&lt;/h1&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;link&#34; target=&#34;_blank&#34;&gt;link here&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&#34;acknowledgements&#34;&gt;Acknowledgements&lt;/h1&gt;
-
-&lt;p&gt;I had help from people&lt;/p&gt;
-</description>
     </item>
     
   </channel>
