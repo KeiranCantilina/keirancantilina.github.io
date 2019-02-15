@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Recent &amp; Upcoming Talks on  </title>
+    <link>https://keirancantilina.github.io/talk/</link>
+    <description>Recent content in Recent &amp; Upcoming Talks on  </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019</copyright>
+    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0100</lastBuildDate>
+    
+	<atom:link href="https://keirancantilina.github.io/talk/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Applying Climate Change Risk Management Tools to Combine Streamflow Projections and Social Vulnerability</title>
+      <link>https://keirancantilina.github.io/talk/ncwrri-mar2019/</link>
+      <pubDate>Sun, 13 Jan 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://keirancantilina.github.io/talk/ncwrri-mar2019/</guid>
+      <description>Abstract: When combined, future regional increases in precipitation and impervious surfaces due to urban development will likely increase streamflow. Nearby communities that are unable to prepare, respond, recover, and adapt to these increases in streamflow are at risk of facing negative socioeconomic impacts. Tools are needed to ensure climate change adaption planning efforts identify areas where expected increases in streamflow overlap with vulnerable communities. To address this need, we apply a risk management tool—called a risk matrix—to combine hydrologic model results (i.</description>
+    </item>
+    
+    <item>
+      <title>Applied Data Analysis and Mapping in R: Where in Western NC Do Vulnerable Communities and Future Increases in Streamflow Meet?</title>
+      <link>https://keirancantilina.github.io/talk/ncgis_mar2019/</link>
+      <pubDate>Sat, 22 Dec 2018 00:00:00 +0100</pubDate>
+      
+      <guid>https://keirancantilina.github.io/talk/ncgis_mar2019/</guid>
+      <description>Abstract: Global climate models predict an increase in the frequency and magnitude of storm events in the Southeastern United States over the next several decades. Urban development in this region is expected to double by 2060 and associated increases in impervious surfaces may exacerbate flooding. Communities unable to respond and adapt to future changes in water resources are likely to experience adverse social and economic impacts. Socioeconomic metrics such as the social vulnerability index (SoVI) can be used to predict the location of potentially vulnerable communities but do not incorporate changing biophysical factors such as climate and land use change that impact streamflow.</description>
+    </item>
+    
+    <item>
+      <title>Coupling Hydrologic Model Outputs and Demographics Data to Inform Climate Change Planning (Poster)</title>
+      <link>https://keirancantilina.github.io/talk/agu_dec2018/</link>
+      <pubDate>Mon, 05 Nov 2018 00:00:00 +0100</pubDate>
+      
+      <guid>https://keirancantilina.github.io/talk/agu_dec2018/</guid>
+      <description>Abstract: General Circulation Models (GCMs) project an increase in the frequency and magnitude of storm events in the Southeastern United States over the next several decades. Additionally, urban development in this region is expected to double by 2060. Communities unable to mitigate or adapt to climate- and land use-change induced impacts on water resources may experience adverse social and economic impacts. Hydrologic model outputs, such as those from the Soil and Water Assessment Tool (SWAT), are helpful at predicting changing hydrologic processes but do not directly incorporate community demographics that are required to assess vulnerability.</description>
+    </item>
+    
+    <item>
+      <title>Developing Climate Change Risk Management Tools Using R &amp; Python</title>
+      <link>https://keirancantilina.github.io/talk/duke-nov2018/</link>
+      <pubDate>Thu, 01 Nov 2018 00:00:00 +0100</pubDate>
+      
+      <guid>https://keirancantilina.github.io/talk/duke-nov2018/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Applying Climate Change Risk Management Tools to Combine Social Vulnerability and Future Streamflow Projections</title>
+      <link>https://keirancantilina.github.io/talk/fer-oct2018/</link>
+      <pubDate>Mon, 08 Oct 2018 00:00:00 +0200</pubDate>
+      
+      <guid>https://keirancantilina.github.io/talk/fer-oct2018/</guid>
+      <description>Abstract: General Circulation Models (GCMs) project an increase in the frequency and magnitude of storm events in the Southeastern United States over the next several decades. Additionally, urban development in this region is expected to double by 2060. Communities unable to mitigate and adapt to climate- and land use-change induced impacts on water resources may experience adverse social and economic impacts. Hydrologic model outputs, such as those from the Soil and Water Assessment Tool (SWAT), are helpful at predicting changing hydrologic processes but do not directly incorporate community demographics that are required to assess vulnerability.</description>
+    </item>
+    
+    <item>
+      <title>Preparing for Climate Change: Using Hydrology Models and Census Data to Map Vulnerable Communities</title>
+      <link>https://keirancantilina.github.io/talk/ptrc-climate-may2018/</link>
+      <pubDate>Tue, 01 May 2018 00:00:00 +0200</pubDate>
+      
+      <guid>https://keirancantilina.github.io/talk/ptrc-climate-may2018/</guid>
+      <description>This talk is being given by me and Kelly M. Suttles.
+Abstract: Global climate models project an increase in the frequency and magnitude of storm events in the Southeastern United States in the next several decades. Additionally, urban development in this region is expected to double by 2060 and this growth will likely intensify discrepancies between water supply and demand. Communities unable to prepare for climate-induced changes in water resources may experience adverse social and economic impacts.</description>
+    </item>
+    
+    <item>
+      <title>Integrating Hydrological Models and Census Data to Prioritize Climate Change Preparedness</title>
+      <link>https://keirancantilina.github.io/talk/usiale-april2018/</link>
+      <pubDate>Sun, 01 Apr 2018 00:00:00 +0200</pubDate>
+      
+      <guid>https://keirancantilina.github.io/talk/usiale-april2018/</guid>
+      <description>Abstract: Global climate models project an increase in the frequency and magnitude of storm events in the Southeastern United States in the next several decades. Additionally, urban development in this region is expected to double by 2060 and this growth will likely intensify discrepancies between water supply and demand. Communities unable to prepare for climate-induced changes in water resources may experience adverse social and economic impacts. Given the likely impacts of climate and land use change on water resources, there is a need to (1) develop hydrological models capable of predicting watershed-scale impacts of climate change on water resources in North Carolina, (2) combine hydrological model outputs with demographics data to map communities especially vulnerable to future flooding, and (3) use this information to inform flooding preparedness efforts.</description>
+    </item>
+    
+    <item>
+      <title>Integrating Hydrological Models and Census Data to Prioritize Climate Change Preparedness</title>
+      <link>https://keirancantilina.github.io/talk/unc-feb2018/</link>
+      <pubDate>Thu, 01 Feb 2018 00:00:00 +0100</pubDate>
+      
+      <guid>https://keirancantilina.github.io/talk/unc-feb2018/</guid>
+      <description>Abstract: Global climate models project an increase in the frequency and magnitude of storm events in the Southeastern United States in the next several decades. Additionally, urban development in this region is expected to double by 2060 and this growth will likely intensify discrepancies between water supply and demand. Communities unable to prepare for climate-induced changes in water resources may experience adverse social and economic impacts. Given the likely impacts of climate and land use change on water resources, there is a need to (1) develop hydrological models capable of predicting watershed-scale impacts of climate change on water resources in North Carolina, (2) combine hydrological model outputs with demographics data to map communities especially vulnerable to future flooding, and (3) use this information to inform flooding preparedness efforts.</description>
+    </item>
+    
+    <item>
+      <title>Factors Influencing Divergent Patterns of Phosphorus Availability in NY and PA Biogeochemical ‘Hotspots&#39;</title>
+      <link>https://keirancantilina.github.io/talk/agu-dec2016/</link>
+      <pubDate>Thu, 01 Dec 2016 00:00:00 +0100</pubDate>
+      
+      <guid>https://keirancantilina.github.io/talk/agu-dec2016/</guid>
+      <description>Abstract: Anthropogenic alteration of the soil phosphorus (P) cycle leads to subsequent water quality issues in agricultural dominated watersheds. In the humid Northeastern United States (NE US), variably saturated areas can generate surface runoff that transports P and stimulates biogeochemical processes; these hydrologically dynamic locations are often called biogeochemical ‘hotspots’. Many studies have evaluated nitrogen and carbon cycling in biogeochemical hot spots but few have focused on P. We hypothesized seasonally wet parts of the landscape (i.</description>
+    </item>
+    
+  </channel>
+</rss>

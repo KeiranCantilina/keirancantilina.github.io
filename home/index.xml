@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Homes on  </title>
+    <link>https://keirancantilina.github.io/home/</link>
+    <description>Recent content in Homes on  </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019</copyright>
+    <lastBuildDate>Fri, 15 Feb 2019 00:00:00 +0100</lastBuildDate>
+    
+	<atom:link href="https://keirancantilina.github.io/home/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://keirancantilina.github.io/home/about/</link>
+      <pubDate>Fri, 15 Feb 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://keirancantilina.github.io/home/about/</guid>
+      <description>About Me I&amp;rsquo;m a recent Masters graduate from the University of Minnesota&amp;rsquo;s department of Bioproducts and Biosystems Engineering. My research interests center around the creative use of resources to solve interdisciplinary research problems. The research I have done in pursuit of this interest ranges from highly specialized to highly interdisciplinary. For example, I&amp;rsquo;ve worked on the genetic engineering of plant viruses to confer disease resistance to fruit crops, I&amp;rsquo;ve studied the impact of manure application methods on the microbiome of agricultural soil, and I&amp;rsquo;ve designed low-budget hydrological sensors that let citizen scientists monitor agricultural runoff.</description>
+    </item>
+    
+    <item>
+      <title>projects</title>
+      <link>https://keirancantilina.github.io/home/projects/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0200</pubDate>
+      
+      <guid>https://keirancantilina.github.io/home/projects/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>recent publications</title>
+      <link>https://keirancantilina.github.io/home/publications/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0200</pubDate>
+      
+      <guid>https://keirancantilina.github.io/home/publications/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tags</title>
+      <link>https://keirancantilina.github.io/home/tags/</link>
+      <pubDate>Wed, 20 Sep 2017 00:00:00 +0200</pubDate>
+      
+      <guid>https://keirancantilina.github.io/home/tags/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>contact</title>
+      <link>https://keirancantilina.github.io/home/contact/</link>
+      <pubDate>Fri, 15 Feb 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://keirancantilina.github.io/home/contact/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

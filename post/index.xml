@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on  </title>
+    <link>https://keirancantilina.github.io/post/</link>
+    <description>Recent content in Posts on  </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019</copyright>
+    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0100</lastBuildDate>
+    
+	<atom:link href="https://keirancantilina.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>R Resources for Water Scientists</title>
+      <link>https://keirancantilina.github.io/post/2019-02-16-water-resources/</link>
+      <pubDate>Thu, 14 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://keirancantilina.github.io/post/2019-02-16-water-resources/</guid>
+      <description>Background There are lots of resources out there for R users and I thought it might be helpful to compile some that might be especially helpful for water scientists. I’ll also admit that this is a 50% selfish task meant to help me keep track of resources for my own learning.
+ Goals of This Post The main goal of this blog post is to compile links to R resources including: packages, tutorials, books, etc.</description>
+    </item>
+    
+    <item>
+      <title>APIs to the Rescue (&amp; the Census of Agriculture)</title>
+      <link>https://keirancantilina.github.io/post/2019-01-04-nass-api/</link>
+      <pubDate>Fri, 04 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://keirancantilina.github.io/post/2019-01-04-nass-api/</guid>
+      <description>Background Application program interfaces (APIs) help users access (“API request”) and retrieve (“API response”) data from web-based, data servers via programs like R, Python, etc. If you’re interested in more details, several others before me have done a great job writing about API’s and R: this post by C. Waldhauser and this post by T. Clavelle.
+I recently learned about a few R packages that help users interface directly with APIs and a few of these are especially interesting for water-minded, data loving people like me.</description>
+    </item>
+    
+    <item>
+      <title>Tidy Tuesday Hydrology Version: Tidying Up SWAT Outputs</title>
+      <link>https://keirancantilina.github.io/post/2018-10-16-tidy-swat/</link>
+      <pubDate>Mon, 15 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://keirancantilina.github.io/post/2018-10-16-tidy-swat/</guid>
+      <description>Background I recently participated in Thomas Mock’s Tidy Tuesday R challenge with other members of the NC State University R Learning Group. It was a lot of fun and after participating, I felt motivated to share what I’ve been doing to tidy up my own data sets.
+Specifically, I’ve been working with collaborator, Kelly Suttles, to tidy up model outputs from the Soil and Water Assessment Tool (SWAT). SWAT is a hydrologic model used to predict daily and monthly streamflow and water quality at the watershed-scale.</description>
+    </item>
+    
+    <item>
+      <title>Using tibbletime::rollify with USGS Streamgage Data</title>
+      <link>https://keirancantilina.github.io/post/2018-08-04-usgs-rollify/</link>
+      <pubDate>Wed, 05 Sep 2018 21:12:00 -0500</pubDate>
+      
+      <guid>https://keirancantilina.github.io/post/2018-08-04-usgs-rollify/</guid>
+      <description>Background While attending rstudio::conf 2018, I heard about the tibbletime package developed by Davis Vaughan and Matt Dancho for analysis of time series data. In his conference talk, Davis Vaughan presented several business/finance examples to showcase tibbletime’s functionality and mentioned a few, general non-business applications at the end of his talk. I couldn’t help but think about how this package might be especially helpful for environmental scientists working with time series data.</description>
+    </item>
+    
+    <item>
+      <title>My First Post</title>
+      <link>https://keirancantilina.github.io/post/2018-07-20-my-first-post/</link>
+      <pubDate>Mon, 23 Jul 2018 21:13:14 -0500</pubDate>
+      
+      <guid>https://keirancantilina.github.io/post/2018-07-20-my-first-post/</guid>
+      <description>Welcome to the wateR blog! I’ve been considering starting a water-centric data science blog for a while now. Getting this blogdown website up and running has helped solidify my motivation to write regularly about water-related data science advances that are available to R users…and maybe Python users too (both languages are so useful!).
+Some of the specific goals of this blog are to (in no special order):
+ Practice developing my science communication and R skills.</description>
+    </item>
+    
+  </channel>
+</rss>

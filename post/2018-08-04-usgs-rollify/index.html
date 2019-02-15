@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 3.2.0">
+  <meta name="generator" content="Hugo 0.54.0" />
+  <meta name="author" content="Keiran K. Cantilina, MSci">
+
+  
+  
+  
+  
+    
+  
+  <meta name="description" content="Background While attending rstudio::conf 2018, I heard about the tibbletime package developed by Davis Vaughan and Matt Dancho for analysis of time series data. In his conference talk, Davis Vaughan presented several business/finance examples to showcase tibbletime’s functionality and mentioned a few, general non-business applications at the end of his talk. I couldn’t help but think about how this package might be especially helpful for environmental scientists working with time series data.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://keirancantilina.github.io/post/2018-08-04-usgs-rollify/">
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#4caf50">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" crossorigin="anonymous">
+        
+      
+    
+
+    
+
+    
+
+  
+
+  
+  
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,400italic,700|Roboto+Mono">
+  
+
+  <link rel="stylesheet" href="/styles.css">
+  
+
+  
+  
+  
+
+  
+  <link rel="alternate" href="https://keirancantilina.github.io/index.xml" type="application/rss+xml" title=" ">
+  <link rel="feed" href="https://keirancantilina.github.io/index.xml" type="application/rss+xml" title=" ">
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="https://keirancantilina.github.io/post/2018-08-04-usgs-rollify/">
+
+  
+  
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="og:site_name" content=" ">
+  <meta property="og:url" content="https://keirancantilina.github.io/post/2018-08-04-usgs-rollify/">
+  <meta property="og:title" content="Using tibbletime::rollify with USGS Streamgage Data |  ">
+  <meta property="og:description" content="Background While attending rstudio::conf 2018, I heard about the tibbletime package developed by Davis Vaughan and Matt Dancho for analysis of time series data. In his conference talk, Davis Vaughan presented several business/finance examples to showcase tibbletime’s functionality and mentioned a few, general non-business applications at the end of his talk. I couldn’t help but think about how this package might be especially helpful for environmental scientists working with time series data."><meta property="og:image" content="https://keirancantilina.github.io/img/LinkdIn%20profile.png">
+  <meta property="og:locale" content="en-us">
+  
+  <meta property="article:published_time" content="2018-09-05T21:12:00-05:00">
+  
+  <meta property="article:modified_time" content="2018-09-05T21:12:00-05:00">
+  
+
+  
+
+  
+
+  <title>Using tibbletime::rollify with USGS Streamgage Data |  </title>
+
+</head>
+<body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/"> </a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+
+      
+      
+      <ul class="navbar-nav ml-auto">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#about">
+            
+            <span>home</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#projects">
+            
+            <span>projects</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#publications">
+            
+            <span>publications</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#contact">
+            
+            <span>contact</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+      
+
+        
+
+        
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+        </li>
+        
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+<article class="article" itemscope itemtype="http://schema.org/Article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1 itemprop="name">Using tibbletime::rollify with USGS Streamgage Data</h1>
+
+  
+
+  
+    
+
+<div class="article-metadata">
+
+  
+  
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Keiran K. Cantilina, MSci">
+  </span>
+  
+
+  <span class="article-date">
+    
+    <meta content="2018-09-05 21:12:00 -0500 -0500" itemprop="datePublished">
+    <time datetime="2018-09-05 21:12:00 -0500 -0500" itemprop="dateModified">
+      Sep 5, 2018
+    </time>
+  </span>
+  <span itemscope itemprop="publisher" itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Keiran K. Cantilina, MSci">
+  </span>
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    10 min read
+  </span>
+  
+
+  
+  
+
+  
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder"></i>
+    
+    <a href="/categories/r/">R</a>
+    
+  </span>
+  
+  
+
+  
+  
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=Using%20tibbletime%3a%3arollify%20with%20USGS%20Streamgage%20Data&amp;url=https%3a%2f%2fkeirancantilina.github.io%2fpost%2f2018-08-04-usgs-rollify%2f"
+         target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fkeirancantilina.github.io%2fpost%2f2018-08-04-usgs-rollify%2f"
+         target="_blank" rel="noopener">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fkeirancantilina.github.io%2fpost%2f2018-08-04-usgs-rollify%2f&amp;title=Using%20tibbletime%3a%3arollify%20with%20USGS%20Streamgage%20Data"
+         target="_blank" rel="noopener">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </li>
+    <li>
+      <a class="weibo"
+         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fkeirancantilina.github.io%2fpost%2f2018-08-04-usgs-rollify%2f&amp;title=Using%20tibbletime%3a%3arollify%20with%20USGS%20Streamgage%20Data"
+         target="_blank" rel="noopener">
+        <i class="fab fa-weibo"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email"
+         href="mailto:?subject=Using%20tibbletime%3a%3arollify%20with%20USGS%20Streamgage%20Data&amp;body=https%3a%2f%2fkeirancantilina.github.io%2fpost%2f2018-08-04-usgs-rollify%2f">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style" itemprop="articleBody">
+      
+
+
+<div id="background" class="section level1">
+<h1>Background</h1>
+<p>While attending rstudio::conf 2018, I heard about the <a href="https://cran.r-project.org/web/packages/tibbletime/tibbletime.pdf">tibbletime package</a> developed by Davis Vaughan and Matt Dancho for analysis of time series data. In his <a href="https://www.rstudio.com/resources/videos/the-future-of-time-series-and-financial-analysis-in-the-tidyverse/">conference talk</a>, Davis Vaughan presented several business/finance examples to showcase <code>tibbletime</code>’s functionality and mentioned a few, general non-business applications at the end of his talk. I couldn’t help but think about how this package might be especially helpful for environmental scientists working with time series data. I really liked <code>rollify()</code>, which could be used to create and apply custom moving-window functions (e.g., <code>mean()</code>) to time series data; where the size of the window (e.g., 3 days) could also be specified. I was aware of the <code>movingAve()</code> and <code>movingDiff()</code> functions in the <a href="https://pubs.usgs.gov/of/2015/1202/downloads/appendix1.pdf">smwrBase package</a> developed by the U.S. Geological Survey (USGS), which calculate moving average and difference, respectively. However, <code>rollify()</code> has more flexibility; it can be used to take a rolling standard deviation, a rolling ratio of two build in R functions, or a rolling custom function. The possibilities are endless.</p>
+<p>Shortly after the conference, I also heard about the <a href="https://cran.r-project.org/web/packages/dataRetrieval/dataRetrieval.pdf">dataRetrieval package</a> developed by the USGS from my friend, Dr. Kristina Hopkins. This package allows users to import USGS streamflow data (and any other data associated with <a href="https://water.usgs.gov/nsip/definition9.html">USGS streamgages</a>) directly into R. Very exciting!</p>
+</div>
+<div id="goals-of-this-post" class="section level1">
+<h1>Goals of this Post</h1>
+<p>This all sounded so amazing and I had to try it out, which brings me to the goals of this blog post:</p>
+<ul>
+<li>Use the <code>dataRetrieval</code> package to download streamflow data into R for two USGS streamgages</li>
+<li>Use the <code>tibbletime</code> package (along with other <code>tidyverse</code> packages) to aggregate and plot these data for different time periods</li>
+</ul>
+<p>Special thanks to <a href="https://twitter.com/kghopkin?lang=en">Dr. Kristina Hopkins</a> at the USGS in Raleigh, NC for sharing her <code>dataRetrieval</code> code and to <a href="https://www.usgs.gov/staff-profiles/laura-decicco?qt-staff_profile_science_products=3#qt-staff_profile_science_products">Dr. Laura DeCicco</a> at the USGS in Middleton, WI for pointing out key features of the <code>dataRetrieval</code> package!</p>
+<p>First let’s load the R libraries that we’ll need to run the code in this post.</p>
+<pre class="r"><code>library(tidyverse)
+library(lubridate)
+library(tibbletime)
+library(dataRetrieval)</code></pre>
+<p>Before downloading data, you’ll have to specify a desired date range and look up the USGS streamgage identification number(s) for streamgage(s) of interest.</p>
+<pre class="r"><code># define start and end dates
+start_date &lt;- &quot;2017-01-01&quot;
+end_date &lt;- &quot;2018-01-01&quot;</code></pre>
+<p>You’ll also need to specify the parameter code for the data you want to download (e.g., discharge, stage height, etc.). But how do we know what the parameter code is for our favorite data? The USFS have included a look-up table for that! To figure this out, we can save <code>parameterCdFile</code> to a variable named <code>parameter_code_metadata</code> and <code>View(parameter_code_metadata)</code> it to see the parameter code look-up table in RStudio. We can even search through different columns of these data by clicking on the ‘Filter’ funnel icon in the RStudio <code>View()</code> window.</p>
+<pre class="r"><code># look for parameters you want
+parameter_code_metadata &lt;- parameterCdFile
+
+# after some looking around, we see that we want code &quot;00060&quot; for discharge in cubic feet per second (cfs)
+my_parameter_code &lt;- &quot;00060&quot;</code></pre>
+<p>After looking through the table, I figured out that 00060 is the code for discharge in cubic feet per second (cfs). We can save this to the variable <code>my_parameter_code</code>, which leaves one last step…</p>
+<p>We have to decide which streamgage to choose! If you’d rather do this manually/look at a map, you can you can go to the USGS <a href="https://waterdata.usgs.gov/nwis/inventory">Water of the Nation website</a> and use their mapping tool to look up sites visually. Alternatively, you can use the look-up tables in the <code>dataRetrieval</code> package to do this in R.</p>
+<p>Let’s say we want to see all the sites in North Carolina. We can save the output from the <code>whatNWISsites()</code> function to the variable <code>nc_sites</code>.</p>
+<pre class="r"><code>nc_sites &lt;- whatNWISsites(stateCd = &quot;NC&quot;, parameterCD = &quot;00060&quot;)</code></pre>
+<p>Just like we did for the parameter code, we can use ‘Filter’ funnel icon in the RStudio <code>View()</code> window to look for sites that might be interesting to us. I looked for ‘Eno River’ sites and discovered two that I’ll use here: Eno River at Hillsborough, NC (#02085000) and Eno River at Durham, NC (#02085070). The Hillsborough site is upstream of Durham and is surrounded by less urban development.</p>
+<p>Note: If you want to search what data is available (e.g., period of record, available parameters, etc.) you can use <code>whatNWISdata()</code>. See <code>?whatNWISdata</code> for help on how to use this. For ease of use (and because Dr. Kristina Hopkins shared them with me! Thank you!), the service codes include: “dv” for daily data, “iv” for instantaneuos data, “qw” for water quality data, “sv” for site visit data, “pk” for peak measurement data, and “gw” for groundwater data.</p>
+<pre class="r"><code># define sites (you can also just use one site here)
+site_numbers &lt;- c(&quot;02085070&quot;, &quot;02085000&quot;)
+
+# save site info to a variable so we can look at it later
+site_info &lt;- readNWISsite(site_numbers)</code></pre>
+<p>Now we’re ready to download discharge data for these two sites!</p>
+<pre class="r"><code>discharge_raw &lt;- readNWISuv(site_numbers, 
+                            my_parameter_code, 
+                            tz=&#39;America/Jamaica&#39;, 
+                            start_date, end_date)</code></pre>
+<p>Let’s tidy thse data up a bit. We’ll change some of the column names so they make more sense later to us, add a column with the site name, and select only the most important columns. If you are using this for something more formal, you will want to do some QA/QC by checking out the discharge_code column. You can read more about what these codes mean <a href="https://help.waterdata.usgs.gov/output-formats">here</a>.</p>
+<pre class="r"><code>discharge = discharge_raw %&gt;%
+  select(site_number = site_no, 
+         date_time = dateTime,
+         discharge_cfs = X_00060_00000,
+         discharge_code = X_00060_00000_cd,
+         time_zone = tz_cd) %&gt;%
+  mutate(site_name = case_when(
+    site_number == &quot;02085000&quot; ~ &quot;eno_rv_hillsb&quot;,
+    site_number == &quot;02085070&quot; ~ &quot;eno_rv_durham&quot;)) %&gt;%
+  select(site_name, date_time, discharge_cfs)</code></pre>
+<p>Using <code>head()</code>, we see that we’ve downloaded 15-min intervals of streamflow data for both sites.</p>
+<pre class="r"><code>head(discharge, n = 10)
+##        site_name           date_time discharge_cfs
+## 1  eno_rv_hillsb 2017-01-01 00:00:00          9.68
+## 2  eno_rv_hillsb 2017-01-01 00:15:00          9.68
+## 3  eno_rv_hillsb 2017-01-01 00:30:00          9.68
+## 4  eno_rv_hillsb 2017-01-01 00:45:00          9.68
+## 5  eno_rv_hillsb 2017-01-01 01:00:00          9.68
+## 6  eno_rv_hillsb 2017-01-01 01:15:00          9.68
+## 7  eno_rv_hillsb 2017-01-01 01:30:00          9.32
+## 8  eno_rv_hillsb 2017-01-01 01:45:00          9.32
+## 9  eno_rv_hillsb 2017-01-01 02:00:00          9.32
+## 10 eno_rv_hillsb 2017-01-01 02:15:00          9.32</code></pre>
+<p>Let’s say we need daily discharge data to calibrate a hydrology model. We can aggregate the 15-min data to daily data pretty easily using <code>tidyverse</code> functions.</p>
+<pre class="r"><code>discharge_daily &lt;- discharge %&gt;%
+  mutate(year = year(date_time), 
+         month = month(date_time),
+         day = day(date_time)) %&gt;%
+  mutate(date = ymd(paste0(year, &quot;-&quot;, month, &quot;-&quot;, day))) %&gt;%
+  select(site_name, date, discharge_cfs) %&gt;%
+  group_by(site_name, date) %&gt;%
+  summarize(avg_daily_discharge_cfs = mean(discharge_cfs))</code></pre>
+<p>Now let’s try plotting the daily hydrograph (i.e., average daily discharge vs time) for both sites.</p>
+<pre class="r"><code>ggplot(data = discharge_daily) +
+  geom_line(aes(x = date, y = avg_daily_discharge_cfs, color = site_name)) +
+  facet_wrap(~site_name, nrow = 2, ncol = 1) +
+  ylab(&quot;Average Daily Discharge (cfs)&quot;) +
+  theme(panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(),
+        panel.background = element_blank(),
+        axis.line = element_line(colour = &quot;black&quot;),
+        axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1))</code></pre>
+<p><img src="/post/2018-08-04-usgs-rollify_files/figure-html/plotting%20daily%20data-1.png" width="672" /></p>
+<p>As expected, we see that the two sites mimic one another over this one year time period. Remember, the Eno River at Hillsborough site is upstream of the Eno River at Durham site. We also see that the Eno River at Durham site (top, red line) has some higher peaks than the Eno River at Hillborough site (bottom, teal line). This also makes sense since the Durham site is surrounded by more urbanized land than the Hillsborough site.</p>
+<p>Ok, so let’s get back to the <code>tibbletime</code> package. What if we want to compare different time spans? That is, not just daily, but maybe hourly or half day. First we have to define our rolling functions and their associated time spans.</p>
+<p>For this post, let’s create half hour, hourly, half day, and day rolls.</p>
+<pre class="r"><code>mean_roll_30min &lt;- rollify(mean, window = 2)
+mean_roll_1hr &lt;- rollify(mean, window = 4)
+mean_roll_12hr &lt;- rollify(mean, window = 48)
+mean_roll_1d &lt;- rollify(mean, window = 96)</code></pre>
+<p>In this post we’ll focus on using the mean in our rolling functions but I can think of several other functions that might be useful for streamgage data lovers: difference, standard deviation, or maybe even the ratio between two calculations. You could even write your own function and roll that. Pretty flexible, right?</p>
+<p>After you you write the function <code>my_roll_function &lt;- rollify(&lt;function&gt;, window = &lt;row span&gt;)</code> then you can call <code>my_roll_function(&lt;original data column&gt;)</code> in <code>mutate()</code> to create a new column. Depending on the function you’re using, you could maybe even do a nested roll based on a previous column you created. This seems helpful if you’re taking differences or summations across different time scales.</p>
+<p>Let’s roll (our data)! :D</p>
+<pre class="r"><code>discharge_roll &lt;- discharge %&gt;%
+  group_by(site_name) %&gt;%
+  mutate(
+    halfhr_avg_discharge_cfs = mean_roll_30min(discharge_cfs),
+    hourly_avg_discharge_cfs = mean_roll_1hr(discharge_cfs),
+    twelvehr_avg_discharge_cfs = mean_roll_12hr(discharge_cfs), 
+    daily_avg_discharge_cfs = mean_roll_1d(discharge_cfs)) %&gt;%
+  na.omit()
+
+# use na.omit() to delete some of the first cells in the dataframe that are NA&#39;s due to rolling</code></pre>
+<p>Let’s look at these data.</p>
+<pre class="r"><code>head(discharge_roll, n = 10) 
+## # A tibble: 10 x 7
+## # Groups:   site_name [1]
+##    site_name date_time           discharge_cfs halfhr_avg_disc…
+##    &lt;chr&gt;     &lt;dttm&gt;                      &lt;dbl&gt;            &lt;dbl&gt;
+##  1 eno_rv_h… 2017-01-01 23:45:00          12.1             12.1
+##  2 eno_rv_h… 2017-01-02 00:00:00          12.1             12.1
+##  3 eno_rv_h… 2017-01-02 00:15:00          11.6             11.8
+##  4 eno_rv_h… 2017-01-02 00:30:00          11.6             11.6
+##  5 eno_rv_h… 2017-01-02 00:45:00          11.6             11.6
+##  6 eno_rv_h… 2017-01-02 01:00:00          12.1             11.8
+##  7 eno_rv_h… 2017-01-02 01:15:00          12.1             12.1
+##  8 eno_rv_h… 2017-01-02 01:30:00          12.1             12.1
+##  9 eno_rv_h… 2017-01-02 01:45:00          12.1             12.1
+## 10 eno_rv_h… 2017-01-02 02:00:00          12.5             12.3
+## # ... with 3 more variables: hourly_avg_discharge_cfs &lt;dbl&gt;,
+## #   twelvehr_avg_discharge_cfs &lt;dbl&gt;, daily_avg_discharge_cfs &lt;dbl&gt;</code></pre>
+<p>The dataframe has maintained it’s length (except for the NA columns at the top we deleted using <code>na.omit()</code>) and there are four new columns with aggregations of discharge at the time scales we specified in our rolling functions.</p>
+<p>We can plot this as a hydrograph as we did above or we can also plot each aggregation period against the original 15-min data to see how they compare. Let’s show the latter.</p>
+<pre class="r"><code>my_colors &lt;- c(&quot;a_half_hour&quot; = &quot;grey20&quot;, &quot;b_hour&quot; = &quot;grey40&quot;, &quot;c_half_day&quot; = &quot;grey60&quot;, &quot;d_day&quot; = &quot;grey80&quot;)
+
+ggplot(data = discharge_roll) +
+  geom_point(aes(x = discharge_cfs,y = halfhr_avg_discharge_cfs, color = &quot;a_half_hour&quot;), size = 1) +
+  geom_point(aes(x = discharge_cfs, y = hourly_avg_discharge_cfs, color = &quot;b_hour&quot;), size = 1) +
+  geom_point(aes(x = discharge_cfs, y = twelvehr_avg_discharge_cfs, color = &quot;c_half_day&quot;), size = 1) +
+  geom_point(aes(x = discharge_cfs, y = daily_avg_discharge_cfs, color = &quot;d_day&quot;), size = 1) +
+  facet_wrap(~ site_name, ncol = 1, nrow = 2) +
+  scale_color_manual(name = &quot;Time Scale&quot;, values = my_colors) +
+  xlab(&quot;15-min Dicharge (cfs)&quot;) +
+  ylab(&quot;Aggregated Discharge (cfs)&quot;) +
+  theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
+        panel.background = element_blank(), axis.line = element_line(colour = &quot;black&quot;))</code></pre>
+<p><img src="/post/2018-08-04-usgs-rollify_files/figure-html/plot%20results-1.png" width="672" /></p>
+<p>There are some interesting patterns that (I think) are worth pointing out:</p>
+<ul>
+<li><p>Based on the daily hydrograph we plotted above, the Eno River at Durham (top) data set has higher peak events. This was expected given the daily hydrograph we plotted above. We see that discharge values go up to over 10,000 cfs at the Eno River at Durham site whereas for the Eno River at Hillsborough they only go up to about 5,000 cfs.</p></li>
+<li><p>I thought it was interesting that the half hour and hourly data sets match the 15-min time scale closely; we see the points follow the 1:1 line for both. However, the half day and daily data show dampened responses with lower peaks and skew away from the 1:1 line. This dampening wasn’t completely surprising to me but it made me wonder how this would impact downstream applications of daily streamflow data. Is this dampening represented by a linear or non-linear relationship? Is this relationship a function of watershed properties or near gage properties. Lot’s of questions like this come to mind. Most of which deal with being able to account for and maybe even predict this dampening.</p></li>
+<li><p>The last thing that I wanted to point out was the spiraling nature of these figures. The more we aggregate these data, the more it seems to spiral into the origin at zero. Also, it’s interesting to compare the overlap of time scale spirals (i.e., half day and daily) between the two gages. More specifically, we see that one ring of the half day and daily spirals overlap for the Eno River at Hillsborough site but we don’t see this overlap at the Eno River at Durham site. I wonder why? Is it because urban development has caused a little more disconnection between water stored in the landscape for the Eno River at Durham site? Do antecedent moisture conditions play a larger role in future stream response in the less developed Eno River at Hillsborough site?</p></li>
+</ul>
+<p>There are still so many questions floating around in my head but figuring out how to integrate the <code>tibbletime</code> and <code>dataRetrieval</code> packages has been fun! If you know of any publications that address these questions or just want to say <code>Hi!</code>, please let me know <a href="https://twitter.com/sheilasaia?lang=en">via Twitter</a>.</p>
+</div>
+
+    </div>
+
+    
+
+
+
+
+    
+
+
+
+
+
+
+<div class="media author-card" itemscope itemtype="http://schema.org/Person">
+  
+  <img class="portrait mr-3" src="/img/LinkdIn%20profile.png" itemprop="image" alt="Avatar">
+  
+  <div class="media-body">
+    <h5 class="card-title" itemprop="name"><a href="/">Keiran K. Cantilina, MSci</a></h5>
+    <h6 class="card-subtitle"> </h6>
+    
+    <ul class="network-icon" aria-hidden="true">
+      
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      <li>
+        <a itemprop="sameAs" href="mailto:keirancantilina@gmail.com" >
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+      
+      
+      
+      
+        
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="//github.com/keirancantilina" >
+          <i class="fab fa-github"></i>
+        </a>
+      </li>
+      
+      
+      
+      
+        
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="https://www.linkedin.com/in/keiran-cantilina-72074965/" target="_blank" rel="noopener">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </li>
+      
+      
+      
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="http://orcid.org/0000-0003-3583-5609" target="_blank" rel="noopener">
+          <i class="ai ai-orcid"></i>
+        </a>
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+
+
+
+    
+    
+
+    
+
+    
+
+
+  </div>
+</article>
+
+<div class="container">
+  <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    &copy; 2019 &middot; 
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" id="back_to_top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+</div>
+
+
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.3/imagesloaded.pkgd.min.js" integrity="sha512-umsR78NN0D23AzgoZ11K7raBD+R6hqKojyBZs1w8WvYlsI+QuKRGBx3LFCwhatzBunCjDuJpDHwxD13sLMbpRA==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha256-VsEqElsCHSGmnmHXGQzvoWjWwoznFSZc6hs7ARLRacQ=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+        
+      
+
+      
+      
+    
+
+    
+    
+
+    
+    
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    <script src="/js/academic.min.d037ee5294b166a79dec317c58aea9cc.js"></script>
+
+    
+
+  </body>
+</html>
+
