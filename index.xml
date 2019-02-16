@@ -62,7 +62,9 @@
 
 &lt;h1 id=&#34;project-description&#34;&gt;Project Description&lt;/h1&gt;
 
-&lt;p&gt;This project began as a just-for-fun repurposing of an obsolete scanner, but I soon discovered that the linear CCD in this scanner is very sensitive to near-infrared (NIR) wavelengths. This sensitivity, along with the high resolution of images produced by the Scamera, means that I can potentially use it to measure the health of crops in fields by measuring the Normalized Difference Vegetation Index (NDVI), which is based on relative Red/IR reflectivity of plants. You can see how brightly vegetation shows up in the photos below.&lt;/p&gt;
+&lt;p&gt;This project began as a just-for-fun repurposing of an obsolete scanner, but I soon discovered that the linear CCD in this scanner is very sensitive to near-infrared (NIR) wavelengths. This sensitivity, along with the high resolution of images produced by the Scamera, means that I can potentially use it to measure the health of crops in fields by measuring the Normalized Difference Vegetation Index (NDVI), which is based on relative Red/IR reflectivity of plants.&lt;/p&gt;
+
+&lt;p&gt;You can see how brightly vegetation shows up in the photos below. In the 4th picture, the weird vertical artifacts are actually passing pedestrians. Because the scanmera acquires images slowly from left to right, any moving objects get distorted along the horizontal axis.&lt;/p&gt;
 
 &lt;p&gt;The Scamera uses a 330mm doublet lens from an abandoned overhead projector. The modified imaging assembly is so sensitive to IR that cardboard isn’t sufficiently opaque, hence the foil. The only way to control exposure and depth of field is by using laser-cut cardboard apertures because there is no shutter.&lt;/p&gt;
 
