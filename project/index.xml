@@ -22,5 +22,15 @@
 Project Description This project was for my Masters thesis at the University of Minnesota. The objective of this project was to develop a cheap and more rugged alternative to conventional water conductivity sensors, which are often susceptible to corrosion and fouling despite being quite expensive. This flaw exists because water conductivity is conventionally inferred by measuring the electrical resistivity of the water, which requires the direct contact of metallic electrodes with the water under test.</description>
     </item>
     
+    <item>
+      <title>The Scanmera</title>
+      <link>https://keirancantilina.github.io/project/scanmera/</link>
+      <pubDate>Fri, 15 Feb 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://keirancantilina.github.io/project/scanmera/</guid>
+      <description>Timeline Nov 2017 - Current
+Project Description This project began as a just-for-fun repurposing of an obsolete scanner, but I soon discovered that the linear CCD in this scanner is very sensitive to near-infrared (NIR) wavelengths. This sensitivity, along with the high resolution of images produced by the Scamera, means that I can potentially use it to measure the health of crops in fields by measuring the Normalized Difference Vegetation Index (NDVI), which is based on relative Red/IR reflectivity of plants.</description>
+    </item>
+    
   </channel>
 </rss>

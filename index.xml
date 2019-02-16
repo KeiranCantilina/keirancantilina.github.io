@@ -49,6 +49,50 @@
     </item>
     
     <item>
+      <title>The Scanmera</title>
+      <link>https://keirancantilina.github.io/project/scanmera/</link>
+      <pubDate>Fri, 15 Feb 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://keirancantilina.github.io/project/scanmera/</guid>
+      <description>
+
+&lt;h1 id=&#34;timeline&#34;&gt;Timeline&lt;/h1&gt;
+
+&lt;p&gt;Nov 2017 - Current&lt;/p&gt;
+
+&lt;h1 id=&#34;project-description&#34;&gt;Project Description&lt;/h1&gt;
+
+&lt;p&gt;This project began as a just-for-fun repurposing of an obsolete scanner, but I soon discovered that the linear CCD in this scanner is very sensitive to near-infrared (NIR) wavelengths. This sensitivity, along with the high resolution of images produced by the Scamera, means that I can potentially use it to measure the health of crops in fields by measuring the Normalized Difference Vegetation Index (NDVI), which is based on relative Red/IR reflectivity of plants. You can see how brightly vegetation shows up in the photos below.&lt;/p&gt;
+
+&lt;p&gt;The Scamera uses a 330mm doublet lens from an abandoned overhead projector. The modified imaging assembly is so sensitive to IR that cardboard isn’t sufficiently opaque, hence the foil. The only way to control exposure and depth of field is by using laser-cut cardboard apertures because there is no shutter.&lt;/p&gt;
+
+&lt;p&gt;Future work involves a chassis overhaul (for better portability), improved lightproofness (which should fix contrast issues), and a more stable power supply (which should reduce the severe noise issue visible in pictures).&lt;/p&gt;
+
+&lt;h1 id=&#34;project-links&#34;&gt;Project Links&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/KeiranCantilina/Scanmera&#34; target=&#34;_blank&#34;&gt;Github repo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://drive.google.com/open?id=11ls2AhE8IGYdJVQsz3RzfAySejQ5RCwX&#34; target=&#34;_blank&#34;&gt;Full-resolution project images &lt;/a&gt;(Note: Many images produced by the camera have a 1:5 pixel aspect ratio)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;acknowledgements&#34;&gt;Acknowledgements&lt;/h1&gt;
+
+&lt;p&gt;Thanks to Dr. Pete Marchetto for making acquisition of the scanner possible, and thanks to Dane Kouttron for help troubleshooting the noise issue.&lt;/p&gt;
+
+&lt;p&gt;Much life-debt was owed to Hanna Lin for standing out in sub-0 temperatures with me while I carted around a silly contraption.&lt;/p&gt;
+
+&lt;h1 id=&#34;project-photos&#34;&gt;Project Photos&lt;/h1&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://github.com/KeiranCantilina/Scanmera/blob/master/test_020_shrunk.png?raw=true&#34; alt=&#34;photo1&#34; /&gt;
+&lt;img src=&#34;Capture.PNG&#34; alt=&#34;photo2&#34; /&gt;
+&lt;img src=&#34;test035.png&#34; alt=&#34;photo3&#34; /&gt;
+&lt;img src=&#34;test034_contrast_compressed.png&#34; alt=&#34;photo4&#34; /&gt;
+&lt;img src=&#34;11_21_2017_1604_f022_002.png&#34; alt=&#34;photo5&#34; /&gt;
+&lt;img src=&#34;1121171702.jpg&#34; alt=&#34;photo6&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Absence of genetic selection in a pathogenic Escherichia coli strain exposed to the manure-amended soil environment</title>
       <link>https://keirancantilina.github.io/publication/soil-ecoli-manure/</link>
       <pubDate>Fri, 07 Dec 2018 00:00:00 +0100</pubDate>
