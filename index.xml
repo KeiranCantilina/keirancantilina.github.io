@@ -11,6 +11,53 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Portrait Printing Typewriter</title>
+      <link>https://keirancantilina.github.io/project/portrait-typewriter/</link>
+      <pubDate>Sat, 16 Feb 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://keirancantilina.github.io/project/portrait-typewriter/</guid>
+      <description>
+
+&lt;h1 id=&#34;timeline&#34;&gt;Timeline&lt;/h1&gt;
+
+&lt;p&gt;Aug 2017 - Sept 2017&lt;/p&gt;
+
+&lt;h1 id=&#34;project-description&#34;&gt;Project Description&lt;/h1&gt;
+
+&lt;p&gt;This project began when I picked up a sad typewriter with a broken keyboard set out for free in front of the university library. Since I have a soft spot for obsolete technology, I gave it a new home. Repurposing it became a recreational exercise in both hardware-microcontroller and microcontroller-computer interfaces.&lt;/p&gt;
+
+&lt;p&gt;Images are broken down into lines of text by a Python script on a laptop, which then sends lines of ASCII via a serial-USB interface to an Arduino-style microcontroller. The microcontroller then emulates typewriter keypresses using the transistor array to switch the typewriter’s keyboard matrix.&lt;/p&gt;
+
+&lt;p&gt;Mapping out the keyboard matrix was tedious, but the trickiest part was getting the computer and microcontroller to be patient. The microcontroller can switch the keyboard matrix much faster than the typewriter&amp;rsquo;s daisy wheel can spin, and the typewriter&amp;rsquo;s keyboard buffer only holds a few characters (presumably because fingers are usually slow). Without some way to make the system wait for the typewriter to finish typing, the typewriter tends to receive characters faster than it can type or remember them. I solved this problem by estimating an average typing time per character, and forcing the microcontroller to wait that interval before sending another character. Once the microcontroller has sent a complete line, it sends a message back to the Python script that it is ready to have its serial comms buffer filled with another line.&lt;/p&gt;
+
+&lt;p&gt;A Rasberry pi and webcam might be added eventually to integrate the whole system inside of the typewriter enclosure. This could be set up as a sort of photo-booth arrangement where one only has to push a button for a selfie to begin printing.&lt;/p&gt;
+
+&lt;p&gt;If you decide to replicate this project, beware: you may find yourself searching for long-obsolete typewriter ribbons on ebay at 2 in the morning.
+ Also beware: typewriters are always louder than you expect.&lt;/p&gt;
+
+&lt;h1 id=&#34;project-links&#34;&gt;Project Links&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Code, files and more pictures can be found at this &lt;a href=&#34;https://github.com/KeiranCantilina/Typwriter-Portrait-Project&#34; target=&#34;_blank&#34;&gt;Github repo&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;acknowledgements&#34;&gt;Acknowledgements&lt;/h1&gt;
+
+&lt;p&gt;Thanks to my lovely wife for putting up with CLACK-CLACK-CLACKCLACK-CLACK ad infinitum without becoming a voluntary widow.
+ Thanks to the University of Minnesota librarians for putting old things out for free instead of just chucking them in the trash.&lt;/p&gt;
+
+&lt;h1 id=&#34;project-photos&#34;&gt;Project Photos&lt;/h1&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://github.com/KeiranCantilina/Typwriter-Portrait-Project/blob/master/FInal%20setup.jpg?raw=true&#34; alt=&#34;photo1&#34; /&gt;
+&lt;img src=&#34;https://github.com/KeiranCantilina/Typwriter-Portrait-Project/blob/master/0826171633.jpg?raw=true&#34; alt=&#34;photo2&#34; /&gt;
+&lt;img src=&#34;https://github.com/KeiranCantilina/Typwriter-Portrait-Project/blob/master/0825171817a.jpg?raw=true&#34; alt=&#34;photo3&#34; /&gt;
+&lt;img src=&#34;https://github.com/KeiranCantilina/Typwriter-Portrait-Project/blob/master/0826171318.jpg?raw=true&#34; alt=&#34;photo4&#34; /&gt;
+&lt;img src=&#34;https://github.com/KeiranCantilina/Typwriter-Portrait-Project/blob/master/0826171633c.jpg?raw=true&#34; alt=&#34;photo5&#34; /&gt;
+&lt;img src=&#34;https://github.com/KeiranCantilina/Typwriter-Portrait-Project/blob/master/0825171817.jpg?raw=true&#34; alt=&#34;photo6&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Contactless Water Conductivity Sensor</title>
       <link>https://keirancantilina.github.io/project/conductivity-sensor/</link>
       <pubDate>Fri, 15 Feb 2019 00:00:00 +0100</pubDate>
@@ -62,11 +109,11 @@
 
 &lt;h1 id=&#34;project-description&#34;&gt;Project Description&lt;/h1&gt;
 
-&lt;p&gt;This project began as a just-for-fun repurposing of an obsolete scanner, but I soon discovered that the linear CCD in this scanner is very sensitive to near-infrared (NIR) wavelengths. This sensitivity, along with the high resolution of images produced by the Scamera, means that I can potentially use it to measure the health of crops in fields by measuring the Normalized Difference Vegetation Index (NDVI), which is based on relative Red/IR reflectivity of plants.&lt;/p&gt;
+&lt;p&gt;This project began as a just-for-fun repurposing of an obsolete scanner, but I soon discovered that the linear CCD in this scanner is very sensitive to near-infrared (NIR) wavelengths. This sensitivity, along with the high resolution of images produced by the Scanmera, means that I can potentially use it to measure the health of crops in fields by measuring the Normalized Difference Vegetation Index (NDVI), which is based on relative Red/IR reflectivity of plants.&lt;/p&gt;
 
 &lt;p&gt;You can see how brightly vegetation shows up in the photos below. In the 4th picture, the weird vertical artifacts are actually passing pedestrians. Because the scanmera acquires images slowly from left to right, any moving objects get distorted along the horizontal axis.&lt;/p&gt;
 
-&lt;p&gt;The Scamera uses a 330mm doublet lens from an abandoned overhead projector. The modified imaging assembly is so sensitive to IR that cardboard isn’t sufficiently opaque, hence the foil. The only way to control exposure and depth of field is by using laser-cut cardboard apertures because there is no shutter.&lt;/p&gt;
+&lt;p&gt;The Scamera uses a 330mm doublet lens from an abandoned overhead projector. The scanner was heavily modified and none of the original optical assembly remains except for the imaging sensor. The sensor is so sensitive to IR that cardboard isn’t sufficiently opaque, hence the need to line the enclosure with foil. The only way to control exposure and depth of field is by using laser-cut cardboard apertures because there is no shutter.&lt;/p&gt;
 
 &lt;p&gt;Future work involves a chassis overhaul (for better portability), improved lightproofness (which should fix contrast issues), and a more stable power supply (which should reduce the severe noise issue visible in pictures).&lt;/p&gt;
 
