@@ -4,6 +4,14 @@
     
     <url>
     
+      <loc>https://keirancantilina.github.io/project/electric-scooter/</loc>
+      <lastmod>2019-02-18T00:00:00+01:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>https://keirancantilina.github.io/project/portrait-typewriter/</loc>
       <lastmod>2019-02-16T00:00:00+01:00</lastmod>
     </url>
@@ -111,7 +119,7 @@
     <url>
     
       <loc>https://keirancantilina.github.io/project/</loc>
-      <lastmod>2019-02-16T00:00:00+01:00</lastmod>
+      <lastmod>2019-02-18T00:00:00+01:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -156,7 +164,7 @@
     <url>
     
       <loc>https://keirancantilina.github.io/tags/electronics/</loc>
-      <lastmod>2019-02-16T00:00:00+01:00</lastmod>
+      <lastmod>2019-02-18T00:00:00+01:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -165,7 +173,7 @@
     <url>
     
       <loc>https://keirancantilina.github.io/tags/hardware-hacks/</loc>
-      <lastmod>2019-02-16T00:00:00+01:00</lastmod>
+      <lastmod>2019-02-18T00:00:00+01:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -200,6 +208,15 @@
     
     <url>
     
+      <loc>https://keirancantilina.github.io/tags/mechanical-design/</loc>
+      <lastmod>2019-02-18T00:00:00+01:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>https://keirancantilina.github.io/tags/microcontrollers/</loc>
       <lastmod>2019-02-16T00:00:00+01:00</lastmod>
       <priority>0</priority>
@@ -211,6 +228,15 @@
     
       <loc>https://keirancantilina.github.io/tags/photography/</loc>
       <lastmod>2019-02-15T00:00:00+01:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://keirancantilina.github.io/tags/power-electronics/</loc>
+      <lastmod>2019-02-18T00:00:00+01:00</lastmod>
       <priority>0</priority>
     </url>
     
