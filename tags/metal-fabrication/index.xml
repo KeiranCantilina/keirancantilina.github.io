@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>metal fabrication on  </title>
+    <link>https://keirancantilina.github.io/tags/metal-fabrication/</link>
+    <description>Recent content in metal fabrication on  </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019</copyright>
+    <lastBuildDate>Tue, 19 Feb 2019 00:00:00 +0100</lastBuildDate>
+    
+	<atom:link href="https://keirancantilina.github.io/tags/metal-fabrication/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Giant Wind Chimes</title>
+      <link>https://keirancantilina.github.io/project/giant-windchimes/</link>
+      <pubDate>Tue, 19 Feb 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://keirancantilina.github.io/project/giant-windchimes/</guid>
+      <description>Timeline Sept 2017
+Project Description Very large windchimes made using scrapped 6061-T6 1.5&amp;rdquo; aluminum square tubing. AutoDesk Inventor&amp;rsquo;s FEA utility was used to calculate the exact dimensions required for the desired pitch, so only a single hacksaw cut was necessary for each chime without any fine-tuning afterwards.
+These windchimes are designed to have EXTREMELY long sustain (&amp;gt;30 sec) and very quiet odd-numbered harmonics. They produce a constant hum even when there is very little wind.</description>
+    </item>
+    
+  </channel>
+</rss>

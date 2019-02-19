@@ -11,6 +11,129 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Giant Wind Chimes</title>
+      <link>https://keirancantilina.github.io/project/giant-windchimes/</link>
+      <pubDate>Tue, 19 Feb 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://keirancantilina.github.io/project/giant-windchimes/</guid>
+      <description>
+
+&lt;h1 id=&#34;timeline&#34;&gt;Timeline&lt;/h1&gt;
+
+&lt;p&gt;Sept 2017&lt;/p&gt;
+
+&lt;h1 id=&#34;project-description&#34;&gt;Project Description&lt;/h1&gt;
+
+&lt;p&gt;Very large windchimes made using scrapped 6061-T6 1.5&amp;rdquo; aluminum square tubing. AutoDesk Inventor&amp;rsquo;s FEA utility was used to calculate the exact dimensions required for the desired pitch, so only a single hacksaw cut was necessary for each chime without any fine-tuning afterwards.&lt;/p&gt;
+
+&lt;p&gt;These windchimes are designed to have EXTREMELY long sustain (&amp;gt;30 sec) and very quiet odd-numbered harmonics. They produce a constant hum even when there is very little wind.&lt;/p&gt;
+
+&lt;p&gt;The hanging ring and clapper were both prototyped in lasercut MDF; the final version used lasercut &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;4&lt;/sub&gt;&amp;rdquo; thick transparent acrylic to give the impression that the chimes are floating in space. Transparent 50lb-test fishing line is used for the rigging to enhance the illusion.&lt;/p&gt;
+
+&lt;p&gt;Your neighbors will either want one or they&amp;rsquo;ll hate you.&lt;/p&gt;
+
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;//www.youtube.com/embed/Vis8JXBbJ5Y&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;Audio only &lt;a href=&#34;https://github.com/KeiranCantilina/Giant-Wind-Chimes/blob/master/windchimes.wav?raw=true&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;project-links&#34;&gt;Project Links&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://youtu.be/Vis8JXBbJ5Y&#34; target=&#34;_blank&#34;&gt;Video&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/KeiranCantilina/Giant-Wind-Chimes/blob/master/windchimes.wav?raw=true&#34; target=&#34;_blank&#34;&gt;Audio&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/KeiranCantilina/Giant-Wind-Chimes/blob/master/design.jpg&#34; target=&#34;_blank&#34;&gt;Plans&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/KeiranCantilina/Giant-Wind-Chimes&#34; target=&#34;_blank&#34;&gt;Github repo&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;acknowledgements&#34;&gt;Acknowledgements&lt;/h1&gt;
+
+&lt;p&gt;Thanks to people who throw out good materials for others to reuse.&lt;/p&gt;
+
+&lt;h1 id=&#34;project-photos&#34;&gt;Project Photos&lt;/h1&gt;
+
+&lt;p&gt;&lt;center&gt;
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;featured.png&#34; /&gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  &lt;h4&gt;Final version with transparent rigging&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;Capture.PNG&#34; /&gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  &lt;h4&gt;Neither of these pictures of the final project are very good, sorry&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;Capture2.PNG&#34; /&gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  &lt;h4&gt;Prototype with MDF rigging&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;Capture3.PNG&#34; /&gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  &lt;h4&gt;Draft plans&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;tuning%20fork%20FEA.png&#34; /&gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  &lt;h4&gt;Example of FEA analysis in AutoDesk Inventor&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;&lt;/center&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>GOES-16 Image Fetcher and Desktop Background Utility</title>
       <link>https://keirancantilina.github.io/project/goes16-fetch/</link>
       <pubDate>Mon, 18 Feb 2019 00:00:00 +0100</pubDate>
