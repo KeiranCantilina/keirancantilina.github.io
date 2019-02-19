@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>web scraping on  </title>
+    <link>https://keirancantilina.github.io/tags/web-scraping/</link>
+    <description>Recent content in web scraping on  </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019</copyright>
+    <lastBuildDate>Mon, 18 Feb 2019 00:00:00 +0100</lastBuildDate>
+    
+	<atom:link href="https://keirancantilina.github.io/tags/web-scraping/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>GOES-16 Image Fetcher and Desktop Background Utility</title>
+      <link>https://keirancantilina.github.io/project/goes16-fetch/</link>
+      <pubDate>Mon, 18 Feb 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://keirancantilina.github.io/project/goes16-fetch/</guid>
+      <description>Timeline Oct 2017
+Project Description As an appreciator of both pretty pictures and ambitious radio projects, I wanted a real-time &amp;ldquo;Blue Marble&amp;rdquo;-style picture of the Earth as my deskop background.
+My first attempt at making this happen was to try to receive the downlink from the GOES-16 geostationary weather satellite. GOES-16 is very far from the Earth, so a high-gain directional antenna is needed to listen in on it. Any reasonable person would have gotten a dish antenna, but given my time and budget constraints, I attempted to use an RTL-SDR with an inconveniently-sized corner reflector antenna built out of cardboard and foil, sized for the required gain at ~1600 Mhz.</description>
+    </item>
+    
+  </channel>
+</rss>

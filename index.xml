@@ -11,6 +11,78 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>GOES-16 Image Fetcher and Desktop Background Utility</title>
+      <link>https://keirancantilina.github.io/project/goes16-fetch/</link>
+      <pubDate>Mon, 18 Feb 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://keirancantilina.github.io/project/goes16-fetch/</guid>
+      <description>
+
+&lt;h1 id=&#34;timeline&#34;&gt;Timeline&lt;/h1&gt;
+
+&lt;p&gt;Oct 2017&lt;/p&gt;
+
+&lt;h1 id=&#34;project-description&#34;&gt;Project Description&lt;/h1&gt;
+
+&lt;p&gt;As an appreciator of both pretty pictures and ambitious radio projects, I wanted a real-time &amp;ldquo;Blue Marble&amp;rdquo;-style picture of the Earth as my deskop background.&lt;/p&gt;
+
+&lt;p&gt;My first attempt at making this happen was to try to receive the downlink from the &lt;a href=&#34;https://en.wikipedia.org/wiki/GOES-16&#34; target=&#34;_blank&#34;&gt;GOES-16&lt;/a&gt; geostationary weather satellite. GOES-16 is very far from the Earth, so a high-gain directional antenna is needed to listen in on it. Any reasonable person would have gotten a dish antenna, but given my time and budget constraints, I attempted to use an &lt;a href=&#34;https://www.rtl-sdr.com/about-rtl-sdr/&#34; target=&#34;_blank&#34;&gt;RTL-SDR&lt;/a&gt; with an inconveniently-sized corner reflector antenna built out of cardboard and foil, sized for the required gain at ~1600 Mhz. I know I know, If you&amp;rsquo;re familiar antennas, you&amp;rsquo;re probably facepalming at my silliness. In my defense, I had to at least try.&lt;/p&gt;
+
+&lt;p&gt;Unsurprisingly, this didn&amp;rsquo;t work.&lt;/p&gt;
+
+&lt;p&gt;Surprisingly, the antenna itself did work very well; unfortunately, my location meant that the satellite was rather low on the horizon with a very electrically-noisy major city right smack-dab in the middle of my line of sight. The RTL-SDR has pretty terrible sensitivity and selectivity to begin with, so I decided to shelve this strategy for now.&lt;/p&gt;
+
+&lt;p&gt;Instead, I found that the images from GOES-16 are downloaded every 15 minutes and put on the web (in the form of a fancy app) by NOAA in collaboration with Colorado State University (RAMMB/CIRA-SLIDER, see &lt;a href=&#34;http://rammb-slider.cira.colostate.edu&#34; target=&#34;_blank&#34;&gt;http://rammb-slider.cira.colostate.edu&lt;/a&gt;). Yay! After some sleuthing to find the directory on their server where the pictures are stored, I wrote an R script that fetches the most recent full-disk images of the earth from the website, then formats the tiled image data to work as a desktop background. A batch file called by the Windows task scheduler runs the R script every 15 minutes, and the picture is dumped in a folder configured as a desktop background gallery.&lt;/p&gt;
+
+&lt;h1 id=&#34;project-links&#34;&gt;Project Links&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/KeiranCantilina/GOES16-fetch&#34; target=&#34;_blank&#34;&gt;Download the scripts at this Github repo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://rammb-slider.cira.colostate.edu/&#34; target=&#34;_blank&#34;&gt;RAMMB/CIRA - SLIDER&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;acknowledgements&#34;&gt;Acknowledgements&lt;/h1&gt;
+
+&lt;p&gt;Thanks to the folks at NOAA and the Colorado State for making their science publicly available!
+Thanks to Hanna for letting me store that huge ill-fated corner reflector above her desk.
+Thanks to Paul Schuster for helping me improve the timestamp-parsing part of the script.&lt;/p&gt;
+
+&lt;h1 id=&#34;project-photos&#34;&gt;Project Photos&lt;/h1&gt;
+
+&lt;p&gt;
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;Capture.PNG&#34; /&gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  &lt;h4&gt;Purty desktop background (CIRA geocolor). It is also possible to configure the script to retrieve data from any of the other spectral bands GOES-16 can image. I&amp;rsquo;ve hidden my desktop icons because the disorganization is embarrassing.&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;Capture2.PNG&#34; /&gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  &lt;h4&gt;You can see the corner reflector antenna in the top right of this picture. Also visible is my desktop background as featured in this post, and the &lt;a href=&#34;https://keirancantilina.github.io/project/scanmera/&#34; target=&#34;_blank&#34;&gt;Scanmera&lt;/a&gt;.&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Ultimate Deathtrap: The Danger Scooter</title>
       <link>https://keirancantilina.github.io/project/electric-scooter/</link>
       <pubDate>Mon, 18 Feb 2019 00:00:00 +0100</pubDate>
@@ -44,19 +116,117 @@
 
 &lt;h1 id=&#34;acknowledgements&#34;&gt;Acknowledgements&lt;/h1&gt;
 
-&lt;p&gt;Thanks to Hanna Lin for help with building, and to Dane Kouttron for donating parts(and for carrying some really weird looking stuff through airport security screening).&lt;/p&gt;
+&lt;p&gt;Thanks to Hanna Lin for help with building, and to Dane Kouttron for donating parts (and for carrying some really weird looking stuff through airport security screening).&lt;/p&gt;
 
 &lt;h1 id=&#34;project-photos&#34;&gt;Project Photos&lt;/h1&gt;
 
-&lt;p&gt;&lt;img src=&#34;featured.png&#34; alt=&#34;photo0&#34; /&gt;
-&lt;img src=&#34;P1200996.JPG&#34; alt=&#34;photo1&#34; /&gt;
+&lt;p&gt;
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;featured.png&#34; /&gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  &lt;h4&gt;The scooter as it looks currently&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;P1200996.JPG&#34; /&gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  &lt;h4&gt;Lots of hacksawing to get the new wheel to fit&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
 &lt;img src=&#34;P1210007.JPG&#34; alt=&#34;photo2&#34; /&gt;
-&lt;img src=&#34;P1210016.JPG&#34; alt=&#34;photo3&#34; /&gt;
-&lt;img src=&#34;P1210045.JPG&#34; alt=&#34;photo3b&#34; /&gt;
+
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;P1210016.JPG&#34; /&gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  &lt;h4&gt;Hanna removing the drum brake that came with the hubmotor&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;P1210045.JPG&#34; /&gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  &lt;h4&gt;Test rig (aka bench vise) for making sure the controller is connected with the correct polarity. Suddenly going backwards very fast is not fun.&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
 &lt;img src=&#34;https://github.com/KeiranCantilina/Ultimate-Deathtrap-old-chassis/blob/master/Ultimate%20Deathtrap%20Revived/CIMG0080.JPG?raw=true&#34; alt=&#34;photo4&#34; /&gt;
-&lt;img src=&#34;https://github.com/KeiranCantilina/Ultimate-Deathtrap-old-chassis/blob/master/Fabrication%20photos/0924171633.jpg?raw=true&#34; alt=&#34;photo5&#34; /&gt;
-&lt;img src=&#34;https://github.com/KeiranCantilina/Ultimate-Deathtrap-old-chassis/blob/master/Fabrication%20photos/0915172056.jpg?raw=true&#34; alt=&#34;photo6&#34; /&gt;
-&lt;img src=&#34;upgrade.png&#34; alt=&#34;photo7&#34; /&gt;
+
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;https://github.com/KeiranCantilina/Ultimate-Deathtrap-old-chassis/blob/master/Fabrication%20photos/0924171633.jpg?raw=true&#34; /&gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  &lt;h4&gt;View of scooter rear. You can see the little box with the red switch that the headlight buck converter lives in.&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;https://github.com/KeiranCantilina/Ultimate-Deathtrap-old-chassis/blob/master/Fabrication%20photos/0915172056.jpg?raw=true&#34; /&gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  &lt;h4&gt;Scooter charger&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;upgrade.png&#34; /&gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  &lt;h4&gt;Drawings of parts for the new chassis, to eventually be water-jet cut out of aluminum plate&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
 &lt;img src=&#34;https://github.com/KeiranCantilina/Ultimate-Deathtrap-New-Chassis/blob/master/Capture.PNG?raw=true&#34; alt=&#34;photo8&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
