@@ -12,6 +12,14 @@
     
     <url>
     
+      <loc>https://keirancantilina.github.io/project/long-distance-light/</loc>
+      <lastmod>2019-02-19T00:00:00+01:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>https://keirancantilina.github.io/project/goes16-fetch/</loc>
       <lastmod>2019-02-18T00:00:00+01:00</lastmod>
     </url>
@@ -126,6 +134,24 @@
     
     <url>
     
+      <loc>https://keirancantilina.github.io/tags/arduino/</loc>
+      <lastmod>2019-02-19T00:00:00+01:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://keirancantilina.github.io/tags/c&#43;&#43;/</loc>
+      <lastmod>2019-02-19T00:00:00+01:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>https://keirancantilina.github.io/tags/cad/</loc>
       <lastmod>2019-02-19T00:00:00+01:00</lastmod>
       <priority>0</priority>
@@ -136,6 +162,15 @@
     <url>
     
       <loc>https://keirancantilina.github.io/categories/</loc>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://keirancantilina.github.io/tags/esp8266/</loc>
+      <lastmod>2019-02-19T00:00:00+01:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -189,7 +224,7 @@
     <url>
     
       <loc>https://keirancantilina.github.io/tags/electronic-design/</loc>
-      <lastmod>2019-02-15T00:00:00+01:00</lastmod>
+      <lastmod>2019-02-19T00:00:00+01:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -260,6 +295,15 @@
     
     <url>
     
+      <loc>https://keirancantilina.github.io/tags/internet-of-things/</loc>
+      <lastmod>2019-02-19T00:00:00+01:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>https://keirancantilina.github.io/tags/laser-cutting/</loc>
       <lastmod>2019-02-19T00:00:00+01:00</lastmod>
       <priority>0</priority>
@@ -288,7 +332,7 @@
     <url>
     
       <loc>https://keirancantilina.github.io/tags/microcontrollers/</loc>
-      <lastmod>2019-02-16T00:00:00+01:00</lastmod>
+      <lastmod>2019-02-19T00:00:00+01:00</lastmod>
       <priority>0</priority>
     </url>
     

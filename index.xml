@@ -134,6 +134,126 @@
     </item>
     
     <item>
+      <title>Long-Distance Relationship Light</title>
+      <link>https://keirancantilina.github.io/project/long-distance-light/</link>
+      <pubDate>Tue, 19 Feb 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://keirancantilina.github.io/project/long-distance-light/</guid>
+      <description>
+
+&lt;h1 id=&#34;timeline&#34;&gt;Timeline&lt;/h1&gt;
+
+&lt;p&gt;May 2018&lt;/p&gt;
+
+&lt;h1 id=&#34;project-background&#34;&gt;Project Background&lt;/h1&gt;
+
+&lt;p&gt;A few weeks before my wife and I were to be apart for the summer (due to me studying abroad and her only able to join me there in the fall), my wife stumbled upon &lt;a href=&#34;https://www.thedailybeast.com/sync-with-long-distance-loved-ones-using-lamps&#34; target=&#34;_blank&#34;&gt;these&lt;/a&gt; &amp;ldquo;Long Distance Friendship Lamps.&amp;rdquo; I loved the idea, but I was less enthusiastic about the fact that the operation of the lamps depended on the continuous operation of the company servers. Also they were $150 for a pair, which was a bit much.&lt;/p&gt;
+
+&lt;p&gt;I decided to make a weekend project out of creating my own set! A brief bit of googling revealed that there are similar things out there, but I&amp;rsquo;m intentionally forging forward without looking at other implementations for the learning opportunity. I also set a $5 budget for myself, beyond which any parts would have to come from scrap or stuff I already had.&lt;/p&gt;
+
+&lt;h1 id=&#34;project-description&#34;&gt;Project Description&lt;/h1&gt;
+
+&lt;p&gt;The current design uses a pair of Wildfires (an Arduino-flavor board made by &lt;a href=&#34;https://shop.wickeddevice.com/product/wildfire/&#34; target=&#34;_blank&#34;&gt;WickedDevice&lt;/a&gt;) with RGB LEDS inside of a pair of very cheap button lights from Amazon. The Wildfire is not super well-suited to this project, but it has an integrated ESP8266 wifi chip and a microSD thingy and also I had like 5 of them from work, so that&amp;rsquo;s what I used.&lt;/p&gt;
+
+&lt;p&gt;The software side of things was supposed to be pretty simple. The Wildfire randomly generates 3 values (for RGB) when a button press is detected. These values are published via MQTT to a feed on io.adafruit.com. The device is also subscribed to the same feed, and will collect both values it publishes and values from other devices on the feed. When data is received through the subscription, the device parses the data and uses the RGB values to change its own color.&lt;/p&gt;
+
+&lt;p&gt;This was complicated by very buggy firmware on the Wildfire board which made it randomly stop talking to the ESP8266. In addition, for some reason, comments in certain parts of the code would completely prevent the board from subscribing to the MQTT feed. This makes no sense but I was able to work around it. This project would probably have been massively easier if I was able to buy a pair of Adafruit Feathers or even just two normal Arduino pro minis paired with two ESP8266 modules.&lt;/p&gt;
+
+&lt;p&gt;I managed to finish the project in time before my departure, and my wife and I were able to use the devices between Ohio and Belgium all summer long.&lt;/p&gt;
+
+&lt;p&gt;Future improvements include a migration to more stable hardware, and also custom prettier enclosures.&lt;/p&gt;
+
+&lt;h1 id=&#34;project-links&#34;&gt;Project Links&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/KeiranCantilina/IOT-Long-Distance-Relationship-Colorcube&#34; target=&#34;_blank&#34;&gt;Github repo&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;acknowledgements&#34;&gt;Acknowledgements&lt;/h1&gt;
+
+&lt;p&gt;Thanks to my wife for the idea, and for being patient as I cursed at vaguely defined compile errors.&lt;/p&gt;
+
+&lt;h1 id=&#34;project-photos&#34;&gt;Project Photos&lt;/h1&gt;
+
+&lt;p&gt;&lt;center&gt;
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;0422180032.jpg&#34; /&gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  &lt;h4&gt;Most recent version&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;0422180012.jpg&#34; /&gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  &lt;h4&gt;Enclosure-less prototype next to the most recent version&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;Capture2.PNG&#34; /&gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  &lt;h4&gt;Ugly undersides&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;Capture3.PNG&#34; /&gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  &lt;h4&gt;Progress picture&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;Capture4.PNG&#34; /&gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  &lt;h4&gt;It&amp;rsquo;s a tight fit&amp;hellip;&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;&lt;/center&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>GOES-16 Image Fetcher and Desktop Background Utility</title>
       <link>https://keirancantilina.github.io/project/goes16-fetch/</link>
       <pubDate>Mon, 18 Feb 2019 00:00:00 +0100</pubDate>

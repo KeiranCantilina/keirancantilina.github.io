@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 3.2.0">
+  <meta name="generator" content="Hugo 0.54.0" />
+  <meta name="author" content="Keiran K. Cantilina, MS">
+
+  
+  
+  
+  
+    
+  
+  <meta name="description" content="A pair of networked RGB LED widgets that synchronously change color when one of them is activated">
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://keirancantilina.github.io/project/long-distance-light/">
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#4caf50">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" crossorigin="anonymous">
+        
+      
+    
+
+    
+
+    
+
+  
+
+  
+  
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,400italic,700|Roboto+Mono">
+  
+
+  <link rel="stylesheet" href="/styles.css">
+  
+
+  
+  
+  
+
+  
+  <link rel="alternate" href="https://keirancantilina.github.io/index.xml" type="application/rss+xml" title=" ">
+  <link rel="feed" href="https://keirancantilina.github.io/index.xml" type="application/rss+xml" title=" ">
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="https://keirancantilina.github.io/project/long-distance-light/">
+
+  
+  
+  
+  
+    
+  
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="og:site_name" content=" ">
+  <meta property="og:url" content="https://keirancantilina.github.io/project/long-distance-light/">
+  <meta property="og:title" content="Long-Distance Relationship Light |  ">
+  <meta property="og:description" content="A pair of networked RGB LED widgets that synchronously change color when one of them is activated"><meta property="og:image" content="https://keirancantilina.github.io/project/long-distance-light/featured.jpg">
+  <meta property="og:locale" content="en-us">
+  
+  <meta property="article:published_time" content="2019-02-19T00:00:00&#43;01:00">
+  
+  <meta property="article:modified_time" content="2019-02-19T00:00:00&#43;01:00">
+  
+
+  
+
+  
+
+  <title>Long-Distance Relationship Light |  </title>
+
+</head>
+<body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/"> </a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+
+      
+      
+      <ul class="navbar-nav ml-auto">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#about">
+            
+            <span>home</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#projects">
+            
+            <span>projects</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#publications">
+            
+            <span>publications</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#contact">
+            
+            <span>contact</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+      
+
+        
+
+        
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+        </li>
+        
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+<article class="article article-project" itemscope itemtype="http://schema.org/Article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="article-header d-xl-none">
+  <div class="featured-image" style="background-image: url('/project/long-distance-light/featured_huf6d19f360bf8f43b74994a2e957143bf_65043_800x0_resize_q75_box.jpg');"></div>
+  
+</div>
+
+
+<div class="container-fluid split-header d-none d-xl-block">
+  <div class="row">
+    <div class="col-6">
+      <div class="split-header-content">
+        <h1 itemprop="name">Long-Distance Relationship Light</h1>
+
+        
+
+        
+
+<div class="article-metadata">
+
+  
+  
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Keiran K. Cantilina, MS">
+  </span>
+  
+
+  <span class="article-date">
+    
+    <meta content="2019-02-19 00:00:00 &#43;0100 CET" itemprop="datePublished">
+    <time datetime="2019-02-19 00:00:00 &#43;0100 CET" itemprop="dateModified">
+      Feb 19, 2019
+    </time>
+  </span>
+  <span itemscope itemprop="publisher" itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Keiran K. Cantilina, MS">
+  </span>
+
+  
+
+  
+  
+
+  
+
+  
+
+</div>
+
+
+        
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+        
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=Long-Distance%20Relationship%20Light&amp;url=https%3a%2f%2fkeirancantilina.github.io%2fproject%2flong-distance-light%2f"
+         target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fkeirancantilina.github.io%2fproject%2flong-distance-light%2f"
+         target="_blank" rel="noopener">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fkeirancantilina.github.io%2fproject%2flong-distance-light%2f&amp;title=Long-Distance%20Relationship%20Light"
+         target="_blank" rel="noopener">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </li>
+    <li>
+      <a class="weibo"
+         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fkeirancantilina.github.io%2fproject%2flong-distance-light%2f&amp;title=Long-Distance%20Relationship%20Light"
+         target="_blank" rel="noopener">
+        <i class="fab fa-weibo"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email"
+         href="mailto:?subject=Long-Distance%20Relationship%20Light&amp;body=https%3a%2f%2fkeirancantilina.github.io%2fproject%2flong-distance-light%2f">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="split-header-image">
+        <img src="/project/long-distance-light/featured_huf6d19f360bf8f43b74994a2e957143bf_65043_680x500_fill_q90_box_center.jpg" itemprop="image" alt="">
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="article-container d-xl-none">
+  <h1 itemprop="name">Long-Distance Relationship Light</h1>
+
+  
+
+  
+
+<div class="article-metadata">
+
+  
+  
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Keiran K. Cantilina, MS">
+  </span>
+  
+
+  <span class="article-date">
+    
+    <meta content="2019-02-19 00:00:00 &#43;0100 CET" itemprop="datePublished">
+    <time datetime="2019-02-19 00:00:00 &#43;0100 CET" itemprop="dateModified">
+      Feb 19, 2019
+    </time>
+  </span>
+  <span itemscope itemprop="publisher" itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Keiran K. Cantilina, MS">
+  </span>
+
+  
+
+  
+  
+
+  
+
+  
+  
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=Long-Distance%20Relationship%20Light&amp;url=https%3a%2f%2fkeirancantilina.github.io%2fproject%2flong-distance-light%2f"
+         target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fkeirancantilina.github.io%2fproject%2flong-distance-light%2f"
+         target="_blank" rel="noopener">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fkeirancantilina.github.io%2fproject%2flong-distance-light%2f&amp;title=Long-Distance%20Relationship%20Light"
+         target="_blank" rel="noopener">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </li>
+    <li>
+      <a class="weibo"
+         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fkeirancantilina.github.io%2fproject%2flong-distance-light%2f&amp;title=Long-Distance%20Relationship%20Light"
+         target="_blank" rel="noopener">
+        <i class="fab fa-weibo"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email"
+         href="mailto:?subject=Long-Distance%20Relationship%20Light&amp;body=https%3a%2f%2fkeirancantilina.github.io%2fproject%2flong-distance-light%2f">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style" itemprop="articleBody">
+      
+
+<h1 id="timeline">Timeline</h1>
+
+<p>May 2018</p>
+
+<h1 id="project-background">Project Background</h1>
+
+<p>A few weeks before my wife and I were to be apart for the summer (due to me studying abroad and her only able to join me there in the fall), my wife stumbled upon <a href="https://www.thedailybeast.com/sync-with-long-distance-loved-ones-using-lamps" target="_blank">these</a> &ldquo;Long Distance Friendship Lamps.&rdquo; I loved the idea, but I was less enthusiastic about the fact that the operation of the lamps depended on the continuous operation of the company servers. Also they were $150 for a pair, which was a bit much.</p>
+
+<p>I decided to make a weekend project out of creating my own set! A brief bit of googling revealed that there are similar things out there, but I&rsquo;m intentionally forging forward without looking at other implementations for the learning opportunity. I also set a $5 budget for myself, beyond which any parts would have to come from scrap or stuff I already had.</p>
+
+<h1 id="project-description">Project Description</h1>
+
+<p>The current design uses a pair of Wildfires (an Arduino-flavor board made by <a href="https://shop.wickeddevice.com/product/wildfire/" target="_blank">WickedDevice</a>) with RGB LEDS inside of a pair of very cheap button lights from Amazon. The Wildfire is not super well-suited to this project, but it has an integrated ESP8266 wifi chip and a microSD thingy and also I had like 5 of them from work, so that&rsquo;s what I used.</p>
+
+<p>The software side of things was supposed to be pretty simple. The Wildfire randomly generates 3 values (for RGB) when a button press is detected. These values are published via MQTT to a feed on io.adafruit.com. The device is also subscribed to the same feed, and will collect both values it publishes and values from other devices on the feed. When data is received through the subscription, the device parses the data and uses the RGB values to change its own color.</p>
+
+<p>This was complicated by very buggy firmware on the Wildfire board which made it randomly stop talking to the ESP8266. In addition, for some reason, comments in certain parts of the code would completely prevent the board from subscribing to the MQTT feed. This makes no sense but I was able to work around it. This project would probably have been massively easier if I was able to buy a pair of Adafruit Feathers or even just two normal Arduino pro minis paired with two ESP8266 modules.</p>
+
+<p>I managed to finish the project in time before my departure, and my wife and I were able to use the devices between Ohio and Belgium all summer long.</p>
+
+<p>Future improvements include a migration to more stable hardware, and also custom prettier enclosures.</p>
+
+<h1 id="project-links">Project Links</h1>
+
+<ul>
+<li><a href="https://github.com/KeiranCantilina/IOT-Long-Distance-Relationship-Colorcube" target="_blank">Github repo</a></li>
+</ul>
+
+<h1 id="acknowledgements">Acknowledgements</h1>
+
+<p>Thanks to my wife for the idea, and for being patient as I cursed at vaguely defined compile errors.</p>
+
+<h1 id="project-photos">Project Photos</h1>
+
+<p><center>
+
+
+<figure>
+
+<img src="0422180032.jpg" />
+
+
+
+<figcaption data-pre="Figure " data-post=":" >
+  <h4>Most recent version</h4>
+  
+</figcaption>
+
+</figure>
+
+
+
+<figure>
+
+<img src="0422180012.jpg" />
+
+
+
+<figcaption data-pre="Figure " data-post=":" >
+  <h4>Enclosure-less prototype next to the most recent version</h4>
+  
+</figcaption>
+
+</figure>
+
+
+
+<figure>
+
+<img src="Capture2.PNG" />
+
+
+
+<figcaption data-pre="Figure " data-post=":" >
+  <h4>Ugly undersides</h4>
+  
+</figcaption>
+
+</figure>
+
+
+
+<figure>
+
+<img src="Capture3.PNG" />
+
+
+
+<figcaption data-pre="Figure " data-post=":" >
+  <h4>Progress picture</h4>
+  
+</figcaption>
+
+</figure>
+
+
+
+<figure>
+
+<img src="Capture4.PNG" />
+
+
+
+<figcaption data-pre="Figure " data-post=":" >
+  <h4>It&rsquo;s a tight fit&hellip;</h4>
+  
+</figcaption>
+
+</figure></center></p>
+
+    </div>
+
+    
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tags/internet-of-things/">internet of things</a>
+  
+  <a class="badge badge-light" href="/tags/electronic-design/">electronic design</a>
+  
+  <a class="badge badge-light" href="/tags/microcontrollers/">microcontrollers</a>
+  
+  <a class="badge badge-light" href="/tags/c&#43;&#43;/">C&#43;&#43;</a>
+  
+  <a class="badge badge-light" href="/tags/esp8266/">ESP8266</a>
+  
+  <a class="badge badge-light" href="/tags/arduino/">Arduino</a>
+  
+</div>
+
+
+
+    
+
+
+
+
+
+
+<div class="media author-card" itemscope itemtype="http://schema.org/Person">
+  
+  <img class="portrait mr-3" src="/img/LinkdIn%20profile.png" itemprop="image" alt="Avatar">
+  
+  <div class="media-body">
+    <h5 class="card-title" itemprop="name"><a href="/">Keiran K. Cantilina, MS</a></h5>
+    <h6 class="card-subtitle"> </h6>
+    
+    <ul class="network-icon" aria-hidden="true">
+      
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      <li>
+        <a itemprop="sameAs" href="mailto:keirancantilina@gmail.com" >
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+      
+      
+      
+      
+        
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="//github.com/keirancantilina" >
+          <i class="fab fa-github"></i>
+        </a>
+      </li>
+      
+      
+      
+      
+        
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="https://www.linkedin.com/in/keiran-cantilina-72074965/" target="_blank" rel="noopener">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </li>
+      
+      
+      
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="http://orcid.org/0000-0003-3583-5609" target="_blank" rel="noopener">
+          <i class="ai ai-orcid"></i>
+        </a>
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+
+
+
+    
+    
+
+    
+
+      
+      
+      
+
+      
+      
+      
+
+      
+      
+      
+    
+
+  </div>
+</article>
+
+
+
+<div class="container">
+  <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    &copy; 2019 &middot; 
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" id="back_to_top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+</div>
+
+
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.3/imagesloaded.pkgd.min.js" integrity="sha512-umsR78NN0D23AzgoZ11K7raBD+R6hqKojyBZs1w8WvYlsI+QuKRGBx3LFCwhatzBunCjDuJpDHwxD13sLMbpRA==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha256-VsEqElsCHSGmnmHXGQzvoWjWwoznFSZc6hs7ARLRacQ=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+        
+      
+
+      
+      
+    
+
+    
+    
+
+    
+    
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    <script src="/js/academic.min.d037ee5294b166a79dec317c58aea9cc.js"></script>
+
+    
+
+  </body>
+</html>
+
