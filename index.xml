@@ -254,6 +254,198 @@
     </item>
     
     <item>
+      <title>Musical Rocket Bells</title>
+      <link>https://keirancantilina.github.io/project/rocket-bells/</link>
+      <pubDate>Tue, 19 Feb 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://keirancantilina.github.io/project/rocket-bells/</guid>
+      <description>
+
+&lt;h1 id=&#34;timeline&#34;&gt;Timeline&lt;/h1&gt;
+
+&lt;p&gt;July 2017&lt;/p&gt;
+
+&lt;h1 id=&#34;project-background&#34;&gt;Project Background&lt;/h1&gt;
+
+&lt;p&gt;My friend Dane emailed me one day to tell me about a dream he had. It was a long and convoluted (as dreams often are), but the part that stuck out to me was a scene he described where I ran around a space rocket nozzle factory playing the nozzles like bells.&lt;/p&gt;
+
+&lt;p&gt;As a person that plays real non-dream bells semi-professionally, I became intensely curious: how exactly &lt;em&gt;would&lt;/em&gt; it sound if I was in a rocket nozzle factory playing the nozzles like bells?&lt;/p&gt;
+
+&lt;p&gt;This project was an attempt to find out (using every conceivably relevant tool available to me, just for fun).&lt;/p&gt;
+
+&lt;h1 id=&#34;project-description&#34;&gt;Project Description&lt;/h1&gt;
+
+&lt;p&gt;The first step to figuring out how rocket bells would sound is to make a model of a typical rocket bell nozzle.&lt;/p&gt;
+
+&lt;p&gt;Since I had recently read that modern rocket bells use Inconel 718, I chose that to be the material for our nozzles. For dimensions, I found a simple drawing &lt;a href=&#34;http://isaacperrin.com/designing-and-simulating-a-liquid-bipropellant-aerospike-rocket-engine&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.
+&lt;center&gt;
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;template.png&#34; /&gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  &lt;h4&gt;Rocket bell drawing&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;I was too excited to sit down and trace the drawing by hand, so I imported it into Inkscape and used the bitmap trace function to generate a DXF.
+This made a bit of a mess, but mostly everything was there. I imported the DXF into AutoCAD and cleaned it up a bit to make a profile (with an eyeballed thickness).
+&lt;center&gt;
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;autocad.PNG&#34; /&gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  &lt;h4&gt;Nice and clean.&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;With a profile to import into AutoDesk Inventor, it was easy to generate a solid by revolving the profile. I set the material properties to that of Inconel 718.
+&lt;center&gt;
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;rocketbell.png&#34; /&gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  &lt;h4&gt;Tada, pretty solid!&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;Now that I had a model, it was time to figure out how it would sound. To figure out where to start, let&amp;rsquo;s look at some basic campanology!&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;campanology-101-detour&#34;&gt;Campanology 101 detour&lt;/h3&gt;
+
+&lt;p&gt;In a normal musical cup-shaped bell, the bell is usually hung from its crown and struck at the rim (called the soundbow) with a clapper. When struck, a bell vibrates in many modes all at the same time, with each vibrational mode producing its own signature pitch. These pitches (known as &amp;ldquo;overtones&amp;rdquo;) are not harmonically related, which is why bells sound kinda weird |compared to other musical instruments.&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Erfurt_Bell.png/440px-Erfurt_Bell.png&#34; /&gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  &lt;h4&gt;First several bell overtones (picture from Wikipedia)&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;The perceived pitch of the bell (called the &amp;ldquo;strike tone&amp;rdquo;) is actually a psychoacoustic phenomenon. The brain hears the lowest 6-ish overtones of the bell, and (due to currently not fully understood reasons) tries to interpret those overtones as if the bell was an instrument with harmonically related overtones. This results in the brain fabricating a strike tone which is then perceived as the pitch of the bell. For more information, see &lt;a href=&#34;https://en.wikipedia.org/wiki/Strike_tone&#34; target=&#34;_blank&#34;&gt;this Wikipedia article&lt;/a&gt; or &lt;a href=&#34;http://www.hibberts.co.uk/index.htm&#34; target=&#34;_blank&#34;&gt;this excellent site&lt;/a&gt;.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;So now with that explanation out of the way, it&amp;rsquo;s clear that I had to figure out the vibrational modes of our rocket bell.
+To make things simpler, I decided to assume our rocket bell was hung by the waist between the bell and the little portion on the other side.
+With a constraint set to the waist of the nozzle, I then performed a free-space modal analysis using Inventor&amp;rsquo;s built-in FEA tools. This told me the vibrational modes of the the nozzle and their frequencies.&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;fundamental.PNG&#34; /&gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  &lt;h4&gt;Fundamental mode of the rocket bell (Hum tone)&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;&lt;/center&gt;
+With this data in hand, I pushed it through my &lt;a href=&#34;https://github.com/KeiranCantilina/FEA-Bell-simulation/blob/master/Bell%20sound%20simulation%20FINAL.R&#34; target=&#34;_blank&#34;&gt;Bell synthesizer R script&lt;/a&gt;. Since Inventor&amp;rsquo;s FEA doesn&amp;rsquo;t give me relative amplitude of each mode, I chose to assume that the relative amplitudes and decay curves for each mode would match that of a true musical bell of approximately the same size.&lt;/p&gt;
+
+&lt;p&gt;Here&amp;rsquo;s what came out of the script:
+&lt;iframe width=&#34;100%&#34; height=&#34;100&#34; scrolling=&#34;no&#34; frameborder=&#34;no&#34; allow=&#34;autoplay&#34; src=&#34;https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/334401793&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true&#34;&gt;&lt;/iframe&gt;&lt;/p&gt;
+
+&lt;p&gt;Fantastic! Sounds believable.&lt;/p&gt;
+
+&lt;p&gt;I couldn&amp;rsquo;t help but to try to &amp;ldquo;play&amp;rdquo; a song with rocket bells. I made a soundfont (available &lt;a href=&#34;https://github.com/KeiranCantilina/Rocket-Bells/blob/master/Rocket%20Bells.sf2&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;) and pitch-shifted the original sample up and down to make a nice playable range. This isn&amp;rsquo;t really realistic (bells usually change timbre nonlinearly with pitch, due to material property limitations) but it&amp;rsquo;s fun. :P With a royalty-free MIDI file and 5 minutes spent fiddling in MuseScore, I generated the monstrosity below.&lt;/p&gt;
+
+&lt;p&gt;Here&amp;rsquo;s Auld Lang Syne played with Rocket Nozzle Bells:
+&lt;iframe width=&#34;100%&#34; height=&#34;100&#34; scrolling=&#34;no&#34; frameborder=&#34;no&#34; allow=&#34;autoplay&#34; src=&#34;https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/334404425&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true&#34;&gt;&lt;/iframe&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;project-links&#34;&gt;Project Links&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://soundcloud.com/keiran-cantilina/rocket-bell-1&#34; target=&#34;_blank&#34;&gt;Audio&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://soundcloud.com/keiran-cantilina/auld-lang-syne-played-by-extrapolated-rocket-bells&#34; target=&#34;_blank&#34;&gt;Audio&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/KeiranCantilina/Rocket-Bells&#34; target=&#34;_blank&#34;&gt;Github Repo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/KeiranCantilina/FEA-Bell-simulation/blob/master/Bell%20sound%20simulation%20FINAL.R&#34; target=&#34;_blank&#34;&gt;Bell synthesizer code&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/KeiranCantilina/Rocket-Bells/blob/master/Rocket%20Bells.sf2&#34; target=&#34;_blank&#34;&gt;Rocket Bell Soundfont&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;acknowledgements&#34;&gt;Acknowledgements&lt;/h1&gt;
+
+&lt;p&gt;Thanks to Dane Kouttron for sharing his dreams!&lt;/p&gt;
+
+&lt;h1 id=&#34;misc-project-photos&#34;&gt;Misc Project Photos&lt;/h1&gt;
+
+&lt;p&gt;&lt;center&gt;
+
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;rocket%20bell%20mode_1543Hz.png&#34; /&gt;
+
+
+&lt;/figure&gt;
+
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;featured.png&#34; /&gt;
+
+
+&lt;/figure&gt;
+
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;Capture.PNG&#34; /&gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  &lt;h4&gt;Inventor FEA tool&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>GOES-16 Image Fetcher and Desktop Background Utility</title>
       <link>https://keirancantilina.github.io/project/goes16-fetch/</link>
       <pubDate>Mon, 18 Feb 2019 00:00:00 +0100</pubDate>

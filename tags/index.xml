@@ -60,9 +60,18 @@
     <item>
       <title>R</title>
       <link>https://keirancantilina.github.io/tags/r/</link>
-      <pubDate>Mon, 18 Feb 2019 00:00:00 +0100</pubDate>
+      <pubDate>Tue, 19 Feb 2019 00:00:00 +0100</pubDate>
       
       <guid>https://keirancantilina.github.io/tags/r/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>audio synthesis</title>
+      <link>https://keirancantilina.github.io/tags/audio-synthesis/</link>
+      <pubDate>Tue, 19 Feb 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://keirancantilina.github.io/tags/audio-synthesis/</guid>
       <description></description>
     </item>
     
@@ -99,6 +108,15 @@
       <pubDate>Tue, 19 Feb 2019 00:00:00 +0100</pubDate>
       
       <guid>https://keirancantilina.github.io/tags/finite-element-analysis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>fourier synthesis</title>
+      <link>https://keirancantilina.github.io/tags/fourier-synthesis/</link>
+      <pubDate>Tue, 19 Feb 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://keirancantilina.github.io/tags/fourier-synthesis/</guid>
       <description></description>
     </item>
     

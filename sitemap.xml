@@ -20,6 +20,14 @@
     
     <url>
     
+      <loc>https://keirancantilina.github.io/project/rocket-bells/</loc>
+      <lastmod>2019-02-19T00:00:00+01:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>https://keirancantilina.github.io/project/goes16-fetch/</loc>
       <lastmod>2019-02-18T00:00:00+01:00</lastmod>
     </url>
@@ -197,7 +205,7 @@
     <url>
     
       <loc>https://keirancantilina.github.io/tags/r/</loc>
-      <lastmod>2019-02-18T00:00:00+01:00</lastmod>
+      <lastmod>2019-02-19T00:00:00+01:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -207,6 +215,15 @@
     
       <loc>https://keirancantilina.github.io/tags/</loc>
       <lastmod>2017-01-01T00:00:00+01:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://keirancantilina.github.io/tags/audio-synthesis/</loc>
+      <lastmod>2019-02-19T00:00:00+01:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -242,6 +259,15 @@
     <url>
     
       <loc>https://keirancantilina.github.io/tags/finite-element-analysis/</loc>
+      <lastmod>2019-02-19T00:00:00+01:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://keirancantilina.github.io/tags/fourier-synthesis/</loc>
       <lastmod>2019-02-19T00:00:00+01:00</lastmod>
       <priority>0</priority>
     </url>
