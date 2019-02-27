@@ -400,6 +400,7 @@ With this data in hand, I pushed it through my &lt;a href=&#34;https://github.co
 &lt;li&gt;&lt;a href=&#34;https://github.com/KeiranCantilina/Rocket-Bells&#34; target=&#34;_blank&#34;&gt;Github Repo&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/KeiranCantilina/FEA-Bell-simulation/blob/master/Bell%20sound%20simulation%20FINAL.R&#34; target=&#34;_blank&#34;&gt;Bell synthesizer code&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/KeiranCantilina/Rocket-Bells/blob/master/Rocket%20Bells.sf2&#34; target=&#34;_blank&#34;&gt;Rocket Bell Soundfont&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://cad.onshape.com/documents/6c25eac0e3cb486c7dd401a3/w/4c5b46447fceae725d8a6330/e/a087bc84e8836480a54b8bba&#34; target=&#34;_blank&#34;&gt;Link CAD file on Onshape&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h1 id=&#34;acknowledgements&#34;&gt;Acknowledgements&lt;/h1&gt;
@@ -532,6 +533,8 @@ Thanks to Paul Schuster for helping me improve the timestamp-parsing part of the
 &lt;h1 id=&#34;project-description&#34;&gt;Project Description&lt;/h1&gt;
 
 &lt;p&gt;This project was spawned by a desire to make my daily commute to class faster. Being a poor grad student, paying for a campus parking pass was out of the question. I could have bought a bike, but when I found an old 80s kick scooter on Craigslist, I couldn&amp;rsquo;t resist the temptation to build something ridiculous.&lt;/p&gt;
+
+&lt;h1 id=&#34;project-description-1&#34;&gt;Project Description&lt;/h1&gt;
 
 &lt;p&gt;The build is fairly simple: a brushless hubmotor+wheel rescued from a dumpster replaces the rear wheel of the scooter. A cheap Chinese ebike motor controller and a trio of old NiCad drill batteries make up the power system. Paired with a handle throttle form Amazon, and I was good to go after a wee bit of hacksawing. Given that most of the parts were either found, Craigslisted on the cheap, or donated by generous well-wishing friends, this build was kept under the $50 mark.&lt;/p&gt;
 
@@ -678,9 +681,11 @@ Thanks to Paul Schuster for helping me improve the timestamp-parsing part of the
 
 &lt;p&gt;Aug 2017 - Sept 2017&lt;/p&gt;
 
-&lt;h1 id=&#34;project-description&#34;&gt;Project Description&lt;/h1&gt;
+&lt;h1 id=&#34;project-background&#34;&gt;Project Background&lt;/h1&gt;
 
 &lt;p&gt;This project began when I picked up a sad typewriter with a broken keyboard set out for free in front of the university library. Since I have a soft spot for obsolete technology, I gave it a new home. Repurposing it became a recreational exercise in both hardware-microcontroller and microcontroller-computer interfaces.&lt;/p&gt;
+
+&lt;h1 id=&#34;project-description&#34;&gt;Project Description&lt;/h1&gt;
 
 &lt;p&gt;Images are broken down into lines of text by a Python script on a laptop, which then sends lines of ASCII via a serial-USB interface to an Arduino-style microcontroller. The microcontroller then emulates typewriter keypresses using the transistor array to switch the typewriter’s keyboard matrix.&lt;/p&gt;
 

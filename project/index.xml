@@ -63,7 +63,7 @@ My first attempt at making this happen was to try to receive the downlink from t
       <guid>https://keirancantilina.github.io/project/electric-scooter/</guid>
       <description>Timeline Feb 2017 - Current
 Project Description This project was spawned by a desire to make my daily commute to class faster. Being a poor grad student, paying for a campus parking pass was out of the question. I could have bought a bike, but when I found an old 80s kick scooter on Craigslist, I couldn&amp;rsquo;t resist the temptation to build something ridiculous.
-The build is fairly simple: a brushless hubmotor+wheel rescued from a dumpster replaces the rear wheel of the scooter.</description>
+Project Description The build is fairly simple: a brushless hubmotor+wheel rescued from a dumpster replaces the rear wheel of the scooter.</description>
     </item>
     
     <item>
@@ -73,8 +73,8 @@ The build is fairly simple: a brushless hubmotor+wheel rescued from a dumpster r
       
       <guid>https://keirancantilina.github.io/project/portrait-typewriter/</guid>
       <description>Timeline Aug 2017 - Sept 2017
-Project Description This project began when I picked up a sad typewriter with a broken keyboard set out for free in front of the university library. Since I have a soft spot for obsolete technology, I gave it a new home. Repurposing it became a recreational exercise in both hardware-microcontroller and microcontroller-computer interfaces.
-Images are broken down into lines of text by a Python script on a laptop, which then sends lines of ASCII via a serial-USB interface to an Arduino-style microcontroller.</description>
+Project Background This project began when I picked up a sad typewriter with a broken keyboard set out for free in front of the university library. Since I have a soft spot for obsolete technology, I gave it a new home. Repurposing it became a recreational exercise in both hardware-microcontroller and microcontroller-computer interfaces.
+Project Description Images are broken down into lines of text by a Python script on a laptop, which then sends lines of ASCII via a serial-USB interface to an Arduino-style microcontroller.</description>
     </item>
     
     <item>
