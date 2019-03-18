@@ -115,15 +115,6 @@
     
     <url>
     
-      <loc>https://keirancantilina.github.io/</loc>
-      <lastmod>2019-02-15T00:00:00+01:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
       <loc>https://keirancantilina.github.io/publication_types/2/</loc>
       <lastmod>2018-12-07T00:00:00+01:00</lastmod>
       <priority>0</priority>
@@ -179,6 +170,15 @@
     
       <loc>https://keirancantilina.github.io/tags/esp8266/</loc>
       <lastmod>2019-02-19T00:00:00+01:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://keirancantilina.github.io/</loc>
+      <lastmod>2016-04-20T00:00:00+02:00</lastmod>
       <priority>0</priority>
     </url>
     

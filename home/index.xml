@@ -1,16 +1,25 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Homes on  </title>
+    <title>Homes on Keiran Cantilina&#39;s Project Portfolio</title>
     <link>https://keirancantilina.github.io/home/</link>
-    <description>Recent content in Homes on  </description>
+    <description>Recent content in Homes on Keiran Cantilina&#39;s Project Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2019</copyright>
-    <lastBuildDate>Fri, 15 Feb 2019 00:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Wed, 20 Apr 2016 00:00:00 +0200</lastBuildDate>
     
 	<atom:link href="https://keirancantilina.github.io/home/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Projects</title>
+      <link>https://keirancantilina.github.io/home/projects/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0200</pubDate>
+      
+      <guid>https://keirancantilina.github.io/home/projects/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title></title>
@@ -20,15 +29,6 @@
       <guid>https://keirancantilina.github.io/home/about/</guid>
       <description>About Me I am a recent Master of Science graduate from the department of Bioproducts and Biosystems Engineering at the University of Minnesota. My research background focuses on finding solutions to engineering problems by drawing on interdisciplinary knowledge and resources.
 I&amp;rsquo;ve developed a toolbox of skills that has generalist characteristics by nature and specialist characteristics by education. My problem-solving style is a hybrid between the applied tactics of engineers (“Let&amp;rsquo;s make something happen”) and the experimental methods of scientists (“Let&amp;rsquo;s find out how this works”).</description>
-    </item>
-    
-    <item>
-      <title>Selected Projects</title>
-      <link>https://keirancantilina.github.io/home/projects/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0200</pubDate>
-      
-      <guid>https://keirancantilina.github.io/home/projects/</guid>
-      <description></description>
     </item>
     
     <item>
