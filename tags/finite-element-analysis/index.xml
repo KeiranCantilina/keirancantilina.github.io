@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2019</copyright>
-    <lastBuildDate>Tue, 19 Feb 2019 00:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Thu, 14 Mar 2019 00:00:00 +0100</lastBuildDate>
     
 	<atom:link href="https://keirancantilina.github.io/tags/finite-element-analysis/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Musical Rocket Bells</title>
+      <link>https://keirancantilina.github.io/project/rocket-bells/</link>
+      <pubDate>Thu, 14 Mar 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://keirancantilina.github.io/project/rocket-bells/</guid>
+      <description>Timeline July 2017
+Project Background One day, my friend Dane told me about a dream he had. It was long and convoluted (as dreams often are), but the part that stuck out to me was a scene he described where I ran around a space rocket nozzle factory playing the nozzles like bells.
+As a person that plays real non-dream bells semi-professionally, I became intensely curious: how exactly would it sound if I was in a rocket nozzle factory playing the nozzles like bells?</description>
+    </item>
     
     <item>
       <title>Giant Wind Chimes</title>
@@ -21,17 +32,6 @@
       <description>Timeline Sept 2017
 Project Description Very large windchimes made using scrapped 6061-T6 1.5&amp;rdquo; aluminum square tubing. AutoDesk Inventor&amp;rsquo;s FEA utility was used to calculate the exact dimensions required for the desired pitch, so only a single hacksaw cut was necessary for each chime without any fine-tuning afterwards.
 These windchimes are designed to have EXTREMELY long sustain (&amp;gt;30 sec) and very quiet odd-numbered harmonics. They produce a constant hum even when there is very little wind.</description>
-    </item>
-    
-    <item>
-      <title>Musical Rocket Bells</title>
-      <link>https://keirancantilina.github.io/project/rocket-bells/</link>
-      <pubDate>Tue, 19 Feb 2019 00:00:00 +0100</pubDate>
-      
-      <guid>https://keirancantilina.github.io/project/rocket-bells/</guid>
-      <description>Timeline July 2017
-Project Background One day, my friend Dane told me about a dream he had. It was long and convoluted (as dreams often are), but the part that stuck out to me was a scene he described where I ran around a space rocket nozzle factory playing the nozzles like bells.
-As a person that plays real non-dream bells semi-professionally, I became intensely curious: how exactly would it sound if I was in a rocket nozzle factory playing the nozzles like bells?</description>
     </item>
     
   </channel>

@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2019</copyright>
-    <lastBuildDate>Fri, 15 Feb 2019 00:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Fri, 15 Mar 2019 00:00:00 +0100</lastBuildDate>
     
 	<atom:link href="https://keirancantilina.github.io/tags/instrumentation/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,7 +15,7 @@
     <item>
       <title>Contactless Water Conductivity Sensor</title>
       <link>https://keirancantilina.github.io/project/conductivity-sensor/</link>
-      <pubDate>Fri, 15 Feb 2019 00:00:00 +0100</pubDate>
+      <pubDate>Fri, 15 Mar 2019 00:00:00 +0100</pubDate>
       
       <guid>https://keirancantilina.github.io/project/conductivity-sensor/</guid>
       <description>Timeline Jan 2017 - Jun 2018
@@ -29,7 +29,7 @@ Project Description This project was for my Masters thesis at the University of 
       
       <guid>https://keirancantilina.github.io/project/scanmera/</guid>
       <description>Timeline Nov 2017 - Current
-Project Description This project began as a just-for-fun repurposing of an obsolete scanner, but I soon discovered that the linear CCD in this scanner is very sensitive to near-infrared (NIR) wavelengths. This sensitivity, along with the high resolution of images produced by the Scanmera, means that I can potentially use it to measure the health of crops in fields by measuring the Normalized Difference Vegetation Index (NDVI), which is based on relative Red/IR reflectivity of plants.</description>
+Project Background This project began as a just-for-fun repurposing of an obsolete scanner, but I soon discovered that the linear CCD in this scanner is very sensitive to near-infrared (NIR) wavelengths. This sensitivity, along with the high resolution of images produced by the Scanmera, means that I can potentially use it to measure the health of crops in fields by measuring the Normalized Difference Vegetation Index (NDVI), which is based on relative Red/IR reflectivity of plants.</description>
     </item>
     
   </channel>

@@ -29,7 +29,7 @@ Project Background A few weeks before my wife and I were to be apart for the sum
       
       <guid>https://keirancantilina.github.io/project/electric-scooter/</guid>
       <description>Timeline Feb 2017 - Current
-Project Description This project was spawned by a desire to make my daily commute to class faster. Being a poor grad student, paying for a campus parking pass was out of the question. I could have bought a bike, but when I found an old 80s kick scooter on Craigslist, I couldn&amp;rsquo;t resist the temptation to build something ridiculous.
+Project Background This project was spawned by a desire to make my daily commute to class faster. Being a poor grad student, paying for a campus parking pass was out of the question. I could have bought a bike, but when I found an old 80s kick scooter on Craigslist, I couldn&amp;rsquo;t resist the temptation to build something ridiculous.
 Project Description The build is fairly simple: a brushless hubmotor+wheel rescued from a dumpster replaces the rear wheel of the scooter.</description>
     </item>
     
@@ -51,7 +51,7 @@ Project Description Images are broken down into lines of text by a Python script
       
       <guid>https://keirancantilina.github.io/project/scanmera/</guid>
       <description>Timeline Nov 2017 - Current
-Project Description This project began as a just-for-fun repurposing of an obsolete scanner, but I soon discovered that the linear CCD in this scanner is very sensitive to near-infrared (NIR) wavelengths. This sensitivity, along with the high resolution of images produced by the Scanmera, means that I can potentially use it to measure the health of crops in fields by measuring the Normalized Difference Vegetation Index (NDVI), which is based on relative Red/IR reflectivity of plants.</description>
+Project Background This project began as a just-for-fun repurposing of an obsolete scanner, but I soon discovered that the linear CCD in this scanner is very sensitive to near-infrared (NIR) wavelengths. This sensitivity, along with the high resolution of images produced by the Scanmera, means that I can potentially use it to measure the health of crops in fields by measuring the Normalized Difference Vegetation Index (NDVI), which is based on relative Red/IR reflectivity of plants.</description>
     </item>
     
   </channel>

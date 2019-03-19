@@ -11,47 +11,34 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Giant Wind Chimes</title>
-      <link>https://keirancantilina.github.io/project/giant-windchimes/</link>
-      <pubDate>Tue, 19 Feb 2019 00:00:00 +0100</pubDate>
+      <title>Contactless Water Conductivity Sensor</title>
+      <link>https://keirancantilina.github.io/project/conductivity-sensor/</link>
+      <pubDate>Fri, 15 Mar 2019 00:00:00 +0100</pubDate>
       
-      <guid>https://keirancantilina.github.io/project/giant-windchimes/</guid>
+      <guid>https://keirancantilina.github.io/project/conductivity-sensor/</guid>
       <description>
 
 &lt;h1 id=&#34;timeline&#34;&gt;Timeline&lt;/h1&gt;
 
-&lt;p&gt;Sept 2017&lt;/p&gt;
+&lt;p&gt;Jan 2017 - Jun 2018&lt;/p&gt;
 
 &lt;h1 id=&#34;project-description&#34;&gt;Project Description&lt;/h1&gt;
 
-&lt;p&gt;Very large windchimes made using scrapped 6061-T6 1.5&amp;rdquo; aluminum square tubing. AutoDesk Inventor&amp;rsquo;s FEA utility was used to calculate the exact dimensions required for the desired pitch, so only a single hacksaw cut was necessary for each chime without any fine-tuning afterwards.&lt;/p&gt;
+&lt;p&gt;This project was for my Masters thesis at the University of Minnesota. The objective of this project was to develop a cheap and more rugged alternative to conventional water conductivity sensors, which are often susceptible to corrosion and fouling despite being quite expensive. This flaw exists because water conductivity is conventionally inferred by measuring the electrical resistivity of the water, which requires the direct contact of metallic electrodes with the water under test. I have avoided this problem in my design by measuring electrical impedance instead of electrical resistance. Thus, the sensor can use electrodes insulated from the water in an arrangement similar to a parallel-plate capacitor.&lt;/p&gt;
 
-&lt;p&gt;These windchimes are designed to have EXTREMELY long sustain (&amp;gt;30 sec) and very quiet odd-numbered harmonics. They produce a constant hum even when there is very little wind.&lt;/p&gt;
-
-&lt;p&gt;The hanging ring and clapper were both prototyped in lasercut MDF; the final version used lasercut &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;4&lt;/sub&gt;&amp;rdquo; thick transparent acrylic to give the impression that the chimes are floating in space. Transparent 50lb-test fishing line is used for the rigging to enhance the illusion.&lt;/p&gt;
-
-&lt;p&gt;Your neighbors will either want one or they&amp;rsquo;ll hate you.&lt;/p&gt;
-
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;//www.youtube.com/embed/Vis8JXBbJ5Y&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-
-&lt;p&gt;Audio only &lt;a href=&#34;https://github.com/KeiranCantilina/Giant-Wind-Chimes/blob/master/windchimes.wav?raw=true&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;After coming up with the operating principle of the sensor, I designed, simulated, built, and characterized various prototypes. Prototypes were calibrated by comparison with a commercial conductivity sensor in saline solutions of various concentrations. The final prototype I presented at my thesis defense was paired with a commercial microcontroller/DDS board and was capable of processing the raw signal from the sensor and logging data in real units.&lt;/p&gt;
 
 &lt;h1 id=&#34;project-links&#34;&gt;Project Links&lt;/h1&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://youtu.be/Vis8JXBbJ5Y&#34; target=&#34;_blank&#34;&gt;Video&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/KeiranCantilina/Giant-Wind-Chimes/blob/master/windchimes.wav?raw=true&#34; target=&#34;_blank&#34;&gt;Audio&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/KeiranCantilina/Giant-Wind-Chimes/blob/master/design.jpg&#34; target=&#34;_blank&#34;&gt;Plans&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/KeiranCantilina/Giant-Wind-Chimes&#34; target=&#34;_blank&#34;&gt;Github repo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/KeiranCantilina/Contactless_Conductivity_Sensor&#34; target=&#34;_blank&#34;&gt;Github repo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://conservancy.umn.edu/handle/11299/200148&#34; target=&#34;_blank&#34;&gt;Full text of my thesis&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h1 id=&#34;acknowledgements&#34;&gt;Acknowledgements&lt;/h1&gt;
 
-&lt;p&gt;Thanks to people who throw out good materials for others to reuse.&lt;/p&gt;
+&lt;p&gt;Thanks to Dan Furuta for help with testing and troubleshooting during the iterative design process, and for lending me his vintage impedance analyzer.
+ Thanks to Hanna Lin for moral support, without which this project would have been impossible.&lt;/p&gt;
 
 &lt;h1 id=&#34;project-photos&#34;&gt;Project Photos&lt;/h1&gt;
 
@@ -60,192 +47,42 @@
 
 &lt;figure&gt;
 
-&lt;img src=&#34;featured.png&#34; /&gt;
+&lt;img src=&#34;0215181346.jpg&#34; /&gt;
 
 
 
 &lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
-  &lt;h4&gt;Final version with transparent rigging&lt;/h4&gt;
+  &lt;h4&gt;The testing and characterization setup&lt;/h4&gt;
   
 &lt;/figcaption&gt;
 
-&lt;/figure&gt;
-
+&lt;/figure&gt;&lt;/center&gt;
+&lt;center&gt;
 
 
 &lt;figure&gt;
 
-&lt;img src=&#34;Capture.PNG&#34; /&gt;
+&lt;img src=&#34;0215181346b.jpg&#34; /&gt;
 
 
 
 &lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
-  &lt;h4&gt;Neither of these pictures of the final project are very good, sorry&lt;/h4&gt;
+  &lt;h4&gt;Tsunami DDS/ucontroller board&lt;/h4&gt;
   
 &lt;/figcaption&gt;
 
-&lt;/figure&gt;
-
+&lt;/figure&gt;&lt;/center&gt;
+&lt;center&gt;
 
 
 &lt;figure&gt;
 
-&lt;img src=&#34;Capture2.PNG&#34; /&gt;
+&lt;img src=&#34;1121171239a.jpg&#34; /&gt;
 
 
 
 &lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
-  &lt;h4&gt;Prototype with MDF rigging&lt;/h4&gt;
-  
-&lt;/figcaption&gt;
-
-&lt;/figure&gt;
-
-
-
-&lt;figure&gt;
-
-&lt;img src=&#34;Capture3.PNG&#34; /&gt;
-
-
-
-&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
-  &lt;h4&gt;Draft plans&lt;/h4&gt;
-  
-&lt;/figcaption&gt;
-
-&lt;/figure&gt;
-
-
-
-&lt;figure&gt;
-
-&lt;img src=&#34;tuning%20fork%20FEA.png&#34; /&gt;
-
-
-
-&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
-  &lt;h4&gt;Example of FEA analysis in AutoDesk Inventor&lt;/h4&gt;
-  
-&lt;/figcaption&gt;
-
-&lt;/figure&gt;&lt;/center&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Long-Distance Relationship Light</title>
-      <link>https://keirancantilina.github.io/project/long-distance-light/</link>
-      <pubDate>Tue, 19 Feb 2019 00:00:00 +0100</pubDate>
-      
-      <guid>https://keirancantilina.github.io/project/long-distance-light/</guid>
-      <description>
-
-&lt;h1 id=&#34;timeline&#34;&gt;Timeline&lt;/h1&gt;
-
-&lt;p&gt;May 2018&lt;/p&gt;
-
-&lt;h1 id=&#34;project-background&#34;&gt;Project Background&lt;/h1&gt;
-
-&lt;p&gt;A few weeks before my wife and I were to be apart for the summer (due to me studying abroad and her only able to join me there in the fall), my wife stumbled upon &lt;a href=&#34;https://www.thedailybeast.com/sync-with-long-distance-loved-ones-using-lamps&#34; target=&#34;_blank&#34;&gt;these&lt;/a&gt; &amp;ldquo;Long Distance Friendship Lamps.&amp;rdquo; I loved the idea, but I was less enthusiastic about the fact that the operation of the lamps depended on the continuous operation of the company servers. Also they were $150 for a pair, which was a bit much.&lt;/p&gt;
-
-&lt;p&gt;I decided to make a weekend project out of creating my own set! A brief bit of googling revealed that there are similar things out there, but I&amp;rsquo;m intentionally forging forward without looking at other implementations for the learning opportunity. I also set a $5 budget for myself, beyond which any parts would have to come from scrap or stuff I already had.&lt;/p&gt;
-
-&lt;h1 id=&#34;project-description&#34;&gt;Project Description&lt;/h1&gt;
-
-&lt;p&gt;The current design uses a pair of Wildfires (an Arduino-flavor board made by &lt;a href=&#34;https://shop.wickeddevice.com/product/wildfire/&#34; target=&#34;_blank&#34;&gt;WickedDevice&lt;/a&gt;) with RGB LEDS inside of a pair of very cheap button lights from Amazon. The Wildfire is not super well-suited to this project, but it has an integrated ESP8266 wifi chip and a microSD thingy and also I had like 5 of them from work, so that&amp;rsquo;s what I used.&lt;/p&gt;
-
-&lt;p&gt;The software side of things was supposed to be pretty simple. The Wildfire randomly generates 3 values (for RGB) when a button press is detected. These values are published via MQTT to a feed on io.adafruit.com. The device is also subscribed to the same feed, and will collect both values it publishes and values from other devices on the feed. When data is received through the subscription, the device parses the data and uses the RGB values to change its own color.&lt;/p&gt;
-
-&lt;p&gt;This was complicated by very buggy firmware on the Wildfire board which made it randomly stop talking to the ESP8266. In addition, for some reason, comments in certain parts of the code would completely prevent the board from subscribing to the MQTT feed. This makes no sense but I was able to work around it. This project would probably have been massively easier if I was able to buy a pair of Adafruit Feathers or even just two normal Arduino pro minis paired with two ESP8266 modules.&lt;/p&gt;
-
-&lt;p&gt;I managed to finish the project in time before my departure, and my wife and I were able to use the devices between Ohio and Belgium all summer long.&lt;/p&gt;
-
-&lt;p&gt;Future improvements include a migration to more stable hardware, and also custom prettier enclosures.&lt;/p&gt;
-
-&lt;h1 id=&#34;project-links&#34;&gt;Project Links&lt;/h1&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/KeiranCantilina/IOT-Long-Distance-Relationship-Colorcube&#34; target=&#34;_blank&#34;&gt;Github repo&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&#34;acknowledgements&#34;&gt;Acknowledgements&lt;/h1&gt;
-
-&lt;p&gt;Thanks to my wife for the idea, and for being patient as I cursed at vaguely defined compile errors.&lt;/p&gt;
-
-&lt;h1 id=&#34;project-photos&#34;&gt;Project Photos&lt;/h1&gt;
-
-&lt;p&gt;&lt;center&gt;
-
-
-&lt;figure&gt;
-
-&lt;img src=&#34;0422180032.jpg&#34; /&gt;
-
-
-
-&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
-  &lt;h4&gt;Most recent version&lt;/h4&gt;
-  
-&lt;/figcaption&gt;
-
-&lt;/figure&gt;
-
-
-
-&lt;figure&gt;
-
-&lt;img src=&#34;0422180012.jpg&#34; /&gt;
-
-
-
-&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
-  &lt;h4&gt;Enclosure-less prototype next to the most recent version&lt;/h4&gt;
-  
-&lt;/figcaption&gt;
-
-&lt;/figure&gt;
-
-
-
-&lt;figure&gt;
-
-&lt;img src=&#34;Capture2.PNG&#34; /&gt;
-
-
-
-&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
-  &lt;h4&gt;Ugly undersides&lt;/h4&gt;
-  
-&lt;/figcaption&gt;
-
-&lt;/figure&gt;
-
-
-
-&lt;figure&gt;
-
-&lt;img src=&#34;Capture3.PNG&#34; /&gt;
-
-
-
-&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
-  &lt;h4&gt;Progress picture&lt;/h4&gt;
-  
-&lt;/figcaption&gt;
-
-&lt;/figure&gt;
-
-
-
-&lt;figure&gt;
-
-&lt;img src=&#34;Capture4.PNG&#34; /&gt;
-
-
-
-&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
-  &lt;h4&gt;It&amp;rsquo;s a tight fit&amp;hellip;&lt;/h4&gt;
+  &lt;h4&gt;Top view of sensor before potting in epoxy&lt;/h4&gt;
   
 &lt;/figcaption&gt;
 
@@ -256,7 +93,7 @@
     <item>
       <title>Musical Rocket Bells</title>
       <link>https://keirancantilina.github.io/project/rocket-bells/</link>
-      <pubDate>Tue, 19 Feb 2019 00:00:00 +0100</pubDate>
+      <pubDate>Thu, 14 Mar 2019 00:00:00 +0100</pubDate>
       
       <guid>https://keirancantilina.github.io/project/rocket-bells/</guid>
       <description>
@@ -447,6 +284,265 @@ With this data in hand, I pushed it through my &lt;a href=&#34;https://github.co
     </item>
     
     <item>
+      <title>Giant Wind Chimes</title>
+      <link>https://keirancantilina.github.io/project/giant-windchimes/</link>
+      <pubDate>Tue, 19 Feb 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://keirancantilina.github.io/project/giant-windchimes/</guid>
+      <description>
+
+&lt;h1 id=&#34;timeline&#34;&gt;Timeline&lt;/h1&gt;
+
+&lt;p&gt;Sept 2017&lt;/p&gt;
+
+&lt;h1 id=&#34;project-description&#34;&gt;Project Description&lt;/h1&gt;
+
+&lt;p&gt;Very large windchimes made using scrapped 6061-T6 1.5&amp;rdquo; aluminum square tubing. AutoDesk Inventor&amp;rsquo;s FEA utility was used to calculate the exact dimensions required for the desired pitch, so only a single hacksaw cut was necessary for each chime without any fine-tuning afterwards.&lt;/p&gt;
+
+&lt;p&gt;These windchimes are designed to have EXTREMELY long sustain (&amp;gt;30 sec) and very quiet odd-numbered harmonics. They produce a constant hum even when there is very little wind.&lt;/p&gt;
+
+&lt;p&gt;The hanging ring and clapper were both prototyped in lasercut MDF; the final version used lasercut &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;4&lt;/sub&gt;&amp;rdquo; thick transparent acrylic to give the impression that the chimes are floating in space. Transparent 50lb-test fishing line is used for the rigging to enhance the illusion.&lt;/p&gt;
+
+&lt;p&gt;Your neighbors will either want one or they&amp;rsquo;ll hate you.&lt;/p&gt;
+
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;//www.youtube.com/embed/Vis8JXBbJ5Y&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;Audio only &lt;a href=&#34;https://github.com/KeiranCantilina/Giant-Wind-Chimes/blob/master/windchimes.wav?raw=true&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;project-links&#34;&gt;Project Links&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://youtu.be/Vis8JXBbJ5Y&#34; target=&#34;_blank&#34;&gt;Video&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/KeiranCantilina/Giant-Wind-Chimes/blob/master/windchimes.wav?raw=true&#34; target=&#34;_blank&#34;&gt;Audio&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/KeiranCantilina/Giant-Wind-Chimes/blob/master/design.jpg&#34; target=&#34;_blank&#34;&gt;Plans&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/KeiranCantilina/Giant-Wind-Chimes&#34; target=&#34;_blank&#34;&gt;Github repo&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;acknowledgements&#34;&gt;Acknowledgements&lt;/h1&gt;
+
+&lt;p&gt;Thanks to people who throw out good materials for others to reuse.&lt;/p&gt;
+
+&lt;h1 id=&#34;project-photos&#34;&gt;Project Photos&lt;/h1&gt;
+
+&lt;p&gt;&lt;center&gt;
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;featured1.png&#34; /&gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  &lt;h4&gt;Final version with transparent rigging&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;Capture.PNG&#34; /&gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  &lt;h4&gt;Neither of these pictures of the final project are very good, sorry&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;Capture2.PNG&#34; /&gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  &lt;h4&gt;Prototype with MDF rigging&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;Capture3.PNG&#34; /&gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  &lt;h4&gt;Draft plans&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;featured.png&#34; /&gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  &lt;h4&gt;Example of FEA analysis in AutoDesk Inventor&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;&lt;/center&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Long-Distance Relationship Light</title>
+      <link>https://keirancantilina.github.io/project/long-distance-light/</link>
+      <pubDate>Tue, 19 Feb 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://keirancantilina.github.io/project/long-distance-light/</guid>
+      <description>
+
+&lt;h1 id=&#34;timeline&#34;&gt;Timeline&lt;/h1&gt;
+
+&lt;p&gt;May 2018&lt;/p&gt;
+
+&lt;h1 id=&#34;project-background&#34;&gt;Project Background&lt;/h1&gt;
+
+&lt;p&gt;A few weeks before my wife and I were to be apart for the summer (due to me studying abroad and her only able to join me there in the fall), my wife stumbled upon &lt;a href=&#34;https://www.thedailybeast.com/sync-with-long-distance-loved-ones-using-lamps&#34; target=&#34;_blank&#34;&gt;these&lt;/a&gt; &amp;ldquo;Long Distance Friendship Lamps.&amp;rdquo; I loved the idea, but I was less enthusiastic about the fact that the operation of the lamps depended on the continuous operation of the company servers. Also they were $150 for a pair, which was a bit much.&lt;/p&gt;
+
+&lt;p&gt;I decided to make a weekend project out of creating my own set! A brief bit of googling revealed that there are similar things out there, but I&amp;rsquo;m intentionally forging forward without looking at other implementations for the learning opportunity. I also set a $5 budget for myself, beyond which any parts would have to come from scrap or stuff I already had.&lt;/p&gt;
+
+&lt;h1 id=&#34;project-description&#34;&gt;Project Description&lt;/h1&gt;
+
+&lt;p&gt;The current design uses a pair of Wildfires (an Arduino-flavor board made by &lt;a href=&#34;https://shop.wickeddevice.com/product/wildfire/&#34; target=&#34;_blank&#34;&gt;WickedDevice&lt;/a&gt;) with RGB LEDS inside of a pair of very cheap button lights from Amazon. The Wildfire is not super well-suited to this project, but it has an integrated ESP8266 wifi chip and a microSD thingy and also I had like 5 of them from work, so that&amp;rsquo;s what I used.&lt;/p&gt;
+
+&lt;p&gt;
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;Capture4.PNG&#34; /&gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  &lt;h4&gt;Wildfire board in situ with RGB LED module resting on top&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;The software side of things was supposed to be pretty simple. The Wildfire randomly generates 3 values (for RGB) when a button press is detected. These values are published via MQTT to a feed on io.adafruit.com. The device is also subscribed to the same feed, and will collect both values it publishes and values from other devices on the feed. When data is received through the subscription, the device parses the data and uses the RGB values to change its own color.&lt;/p&gt;
+
+&lt;p&gt;This was complicated by very buggy firmware on the Wildfire board which made it randomly stop talking to the ESP8266. In addition, for some reason, comments in certain parts of the code would completely prevent the board from subscribing to the MQTT feed. This makes no sense but I was able to work around it. This project would probably have been massively easier if I was able to buy a pair of Adafruit Feathers or even just two normal Arduino pro minis paired with two ESP8266 modules.&lt;/p&gt;
+
+&lt;p&gt;I managed to finish the project in time before my departure, and my wife and I were able to use the devices between Ohio and Belgium all summer long.&lt;/p&gt;
+
+&lt;p&gt;Future improvements include a migration to more stable hardware, and also custom prettier enclosures.&lt;/p&gt;
+
+&lt;h1 id=&#34;project-links&#34;&gt;Project Links&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/KeiranCantilina/IOT-Long-Distance-Relationship-Colorcube&#34; target=&#34;_blank&#34;&gt;Github repo&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;acknowledgements&#34;&gt;Acknowledgements&lt;/h1&gt;
+
+&lt;p&gt;Thanks to my wife for the idea, and for being patient as I cursed at vaguely defined compile errors.&lt;/p&gt;
+
+&lt;h1 id=&#34;project-photos&#34;&gt;Project Photos&lt;/h1&gt;
+
+&lt;p&gt;&lt;center&gt;
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;0422180032.jpg&#34; /&gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  &lt;h4&gt;Most recent version&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;0422180012.jpg&#34; /&gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  &lt;h4&gt;Enclosure-less prototype next to the most recent version&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;Capture2.PNG&#34; /&gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  &lt;h4&gt;Ugly undersides&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;Capture3.PNG&#34; /&gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  &lt;h4&gt;Progress picture&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;Capture4.PNG&#34; /&gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  &lt;h4&gt;It&amp;rsquo;s a tight fit&amp;hellip;&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;&lt;/center&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>GOES-16 Image Fetcher and Desktop Background Utility</title>
       <link>https://keirancantilina.github.io/project/goes16-fetch/</link>
       <pubDate>Mon, 18 Feb 2019 00:00:00 +0100</pubDate>
@@ -530,19 +626,115 @@ Thanks to Paul Schuster for helping me improve the timestamp-parsing part of the
 
 &lt;p&gt;Feb 2017 - Current&lt;/p&gt;
 
-&lt;h1 id=&#34;project-description&#34;&gt;Project Description&lt;/h1&gt;
+&lt;h1 id=&#34;project-background&#34;&gt;Project Background&lt;/h1&gt;
 
 &lt;p&gt;This project was spawned by a desire to make my daily commute to class faster. Being a poor grad student, paying for a campus parking pass was out of the question. I could have bought a bike, but when I found an old 80s kick scooter on Craigslist, I couldn&amp;rsquo;t resist the temptation to build something ridiculous.&lt;/p&gt;
 
-&lt;h1 id=&#34;project-description-1&#34;&gt;Project Description&lt;/h1&gt;
+&lt;h1 id=&#34;project-description&#34;&gt;Project Description&lt;/h1&gt;
 
 &lt;p&gt;The build is fairly simple: a brushless hubmotor+wheel rescued from a dumpster replaces the rear wheel of the scooter. A cheap Chinese ebike motor controller and a trio of old NiCad drill batteries make up the power system. Paired with a handle throttle form Amazon, and I was good to go after a wee bit of hacksawing. Given that most of the parts were either found, Craigslisted on the cheap, or donated by generous well-wishing friends, this build was kept under the $50 mark.&lt;/p&gt;
 
+&lt;p&gt;
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;P1200996.JPG&#34; /&gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  &lt;h4&gt;Lots of hacksawing to get the new wheel to fit&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+&lt;img src=&#34;P1210007.JPG&#34; alt=&#34;photo2&#34; /&gt;
+
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;P1210016.JPG&#34; /&gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  &lt;h4&gt;Hanna removing the drum brake that came with the hubmotor&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;P1210045.JPG&#34; /&gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  &lt;h4&gt;Test rig (aka bench vise) for making sure the controller is connected with the correct polarity. Suddenly going backwards very fast is not fun.&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+&lt;img src=&#34;https://github.com/KeiranCantilina/Ultimate-Deathtrap-old-chassis/blob/master/Ultimate%20Deathtrap%20Revived/CIMG0080.JPG?raw=true&#34; alt=&#34;photo4&#34; /&gt;&lt;/p&gt;
+
 &lt;p&gt;Version 2 of this scooter replaced the drill batteries with 4 lithium-iron-phosphate battery packs very generously donated by a friend. These batteries were production prototypes of devices meant to be drop-in replacements for gel lead-acid batteries in backup applications. Unlike the old drill batteries, these are not as severely affected by the Minnesota cold, and they have a much higher energy and power density. I get 5Ah@56V with this battery arrangement, instead of &amp;lt;2Ah@48V. With the new pack, I got greatly increased range and acceleration and slightly increased top speed. Charging is accomplished using a Meanwell LED streetlight power supply (which does the constant-current regulation the batteries need to not get angry).&lt;/p&gt;
 
-&lt;p&gt;The most recent set of improvements added a speedometer, bell, tail lights, and a 12V LED headlight powered from the 56V battery pack through a buck converter.&lt;/p&gt;
+
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;https://github.com/KeiranCantilina/Ultimate-Deathtrap-old-chassis/blob/master/Fabrication%20photos/0915172056.jpg?raw=true&#34; /&gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  &lt;h4&gt;Scooter charger&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
+&lt;p&gt;The most recent set of improvements added a speedometer, bell, tail lights, and a 12V LED headlight powered from the 56V battery pack through a buck converter.
+
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;https://github.com/KeiranCantilina/Ultimate-Deathtrap-old-chassis/blob/master/Fabrication%20photos/0924171633.jpg?raw=true&#34; /&gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  &lt;h4&gt;View of scooter rear. You can see the little box with the red switch that the headlight buck converter lives in.&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;&lt;/p&gt;
 
 &lt;p&gt;Believe it or not, I used to ride this horrible thing to school nearly every day (except in winter, mostly). It has a top speed of a little over 20mph and a 16 mile range. Planned improvements include a less terrifyingly bendy chassis and perhaps some better brakes. I&amp;rsquo;ve purchased a bike disc brake conversion kit and an adapter ring that should fit the hubmotor, so all that&amp;rsquo;s left is to modify the frame to enable mounting the calipers!&lt;/p&gt;
+
+&lt;p&gt;
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;upgrade.png&#34; /&gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  &lt;h4&gt;Drawings of parts for the new chassis, to eventually be water-jet cut out of aluminum plate&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+&lt;img src=&#34;https://github.com/KeiranCantilina/Ultimate-Deathtrap-New-Chassis/blob/master/Capture.PNG?raw=true&#34; alt=&#34;photo8&#34; /&gt;&lt;/p&gt;
 
 &lt;h1 id=&#34;project-links&#34;&gt;Project Links&lt;/h1&gt;
 
@@ -709,50 +901,27 @@ Thanks to Paul Schuster for helping me improve the timestamp-parsing part of the
 
 &lt;h1 id=&#34;project-photos&#34;&gt;Project Photos&lt;/h1&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://github.com/KeiranCantilina/Typwriter-Portrait-Project/blob/master/FInal%20setup.jpg?raw=true&#34; alt=&#34;photo1&#34; /&gt;
+&lt;p&gt;&lt;center&gt;
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;featured1.png&#34; /&gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  &lt;h4&gt;The final product produced by the typewriter&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;&lt;/center&gt;
+&lt;img src=&#34;https://github.com/KeiranCantilina/Typwriter-Portrait-Project/blob/master/FInal%20setup.jpg?raw=true&#34; alt=&#34;photo1&#34; /&gt;
 &lt;img src=&#34;https://github.com/KeiranCantilina/Typwriter-Portrait-Project/blob/master/0826171633.jpg?raw=true&#34; alt=&#34;photo2&#34; /&gt;
 &lt;img src=&#34;https://github.com/KeiranCantilina/Typwriter-Portrait-Project/blob/master/0825171817a.jpg?raw=true&#34; alt=&#34;photo3&#34; /&gt;
 &lt;img src=&#34;https://github.com/KeiranCantilina/Typwriter-Portrait-Project/blob/master/0826171318.jpg?raw=true&#34; alt=&#34;photo4&#34; /&gt;
 &lt;img src=&#34;https://github.com/KeiranCantilina/Typwriter-Portrait-Project/blob/master/0826171633c.jpg?raw=true&#34; alt=&#34;photo5&#34; /&gt;
 &lt;img src=&#34;https://github.com/KeiranCantilina/Typwriter-Portrait-Project/blob/master/0825171817.jpg?raw=true&#34; alt=&#34;photo6&#34; /&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Contactless Water Conductivity Sensor</title>
-      <link>https://keirancantilina.github.io/project/conductivity-sensor/</link>
-      <pubDate>Fri, 15 Feb 2019 00:00:00 +0100</pubDate>
-      
-      <guid>https://keirancantilina.github.io/project/conductivity-sensor/</guid>
-      <description>
-
-&lt;h1 id=&#34;timeline&#34;&gt;Timeline&lt;/h1&gt;
-
-&lt;p&gt;Jan 2017 - Jun 2018&lt;/p&gt;
-
-&lt;h1 id=&#34;project-description&#34;&gt;Project Description&lt;/h1&gt;
-
-&lt;p&gt;This project was for my Masters thesis at the University of Minnesota. The objective of this project was to develop a cheap and more rugged alternative to conventional water conductivity sensors, which are often susceptible to corrosion and fouling despite being quite expensive. This flaw exists because water conductivity is conventionally inferred by measuring the electrical resistivity of the water, which requires the direct contact of metallic electrodes with the water under test. I have avoided this problem in my design by measuring electrical impedance instead of electrical resistance. Thus, the sensor can use electrodes insulated from the water in an arrangement similar to a parallel-plate capacitor.&lt;/p&gt;
-
-&lt;p&gt;After coming up with the operating principle of the sensor, I designed, simulated, built, and characterized various prototypes. Prototypes were calibrated by comparison with a commercial conductivity sensor in saline solutions of various concentrations. The final prototype I presented at my thesis defense was paired with a commercial microcontroller/DDS board and was capable of processing the raw signal from the sensor and logging data in real units.&lt;/p&gt;
-
-&lt;h1 id=&#34;project-links&#34;&gt;Project Links&lt;/h1&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/KeiranCantilina/Contactless_Conductivity_Sensor&#34; target=&#34;_blank&#34;&gt;Github repo&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://conservancy.umn.edu/handle/11299/200148&#34; target=&#34;_blank&#34;&gt;Full text of my thesis&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&#34;acknowledgements&#34;&gt;Acknowledgements&lt;/h1&gt;
-
-&lt;p&gt;Thanks to Dan Furuta for help with testing and troubleshooting during the iterative design process, and for lending me his vintage impedance analyzer.
- Thanks to Hanna Lin for moral support, without which this project would have been impossible.&lt;/p&gt;
-
-&lt;h1 id=&#34;project-photos&#34;&gt;Project Photos&lt;/h1&gt;
-
-&lt;p&gt;&lt;img src=&#34;0215181346.jpg&#34; alt=&#34;photo1&#34; /&gt;
-&lt;img src=&#34;0215181346b.jpg&#34; alt=&#34;photo2&#34; /&gt;
-&lt;img src=&#34;1121171239a.jpg&#34; alt=&#34;photo2&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -768,15 +937,104 @@ Thanks to Paul Schuster for helping me improve the timestamp-parsing part of the
 
 &lt;p&gt;Nov 2017 - Current&lt;/p&gt;
 
-&lt;h1 id=&#34;project-description&#34;&gt;Project Description&lt;/h1&gt;
+&lt;h1 id=&#34;project-background&#34;&gt;Project Background&lt;/h1&gt;
 
 &lt;p&gt;This project began as a just-for-fun repurposing of an obsolete scanner, but I soon discovered that the linear CCD in this scanner is very sensitive to near-infrared (NIR) wavelengths. This sensitivity, along with the high resolution of images produced by the Scanmera, means that I can potentially use it to measure the health of crops in fields by measuring the Normalized Difference Vegetation Index (NDVI), which is based on relative Red/IR reflectivity of plants.&lt;/p&gt;
 
-&lt;p&gt;You can see how brightly vegetation shows up in the photos below. In the 4th picture, the weird vertical artifacts are actually passing pedestrians. Because the scanmera acquires images slowly from left to right, any moving objects get distorted along the horizontal axis.&lt;/p&gt;
+&lt;h1 id=&#34;project-description&#34;&gt;Project Description&lt;/h1&gt;
+
+&lt;p&gt;&lt;center&gt;
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;test034_contrast_compressed.png&#34; /&gt;
+
+
+&lt;/figure&gt;&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;You can see how brightly vegetation shows up in the photo above. The weird vertical artifacts are actually passing pedestrians. Because the scanmera acquires images slowly from left to right, any moving objects get distorted along the horizontal axis.&lt;/p&gt;
 
 &lt;p&gt;The Scamera uses a 330mm doublet lens from an abandoned overhead projector. The scanner was heavily modified and none of the original optical assembly remains except for the imaging sensor. The sensor is so sensitive to IR that cardboard isn’t sufficiently opaque, hence the need to line the enclosure with foil. The only way to control exposure and depth of field is by using laser-cut cardboard apertures because there is no shutter.&lt;/p&gt;
 
+&lt;p&gt;&lt;center&gt;
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;1109171424.jpg&#34; /&gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  &lt;h4&gt;Doublet lens&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;&lt;/center&gt;
+&lt;center&gt;
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;1109171505.jpg&#34; /&gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  &lt;h4&gt;Modified imaging sensor assembly&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;&lt;/center&gt;&lt;br /&gt;
+&lt;center&gt;
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;1121171702.jpg&#34; /&gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  &lt;h4&gt;Cardboard apertures&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;&lt;/center&gt;&lt;/p&gt;
+
 &lt;p&gt;The scanner likes to eat 16V, and due to lack of resources the current power supply is a horrible assembly consisting of a 16V switching power supply plugged into an automobile DC-AC converter which is hooked up to a 12V SLA battery salvaged from a dead UPS. One day I will use a 12V-16V boost converter like a normal person. For pseudo-portability, the whole thing is set up on a cart from IKEA. It&amp;rsquo;s juuuust short enough that I have to stoop when pushing it around.&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;1109171409.jpg&#34; /&gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  &lt;h4&gt;Sketchy power system&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;&lt;/center&gt;
+&lt;center&gt;
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;Capture2.PNG&#34; /&gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  &lt;h4&gt;The system on its glorious IKEA cart&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;&lt;/center&gt;&lt;/p&gt;
 
 &lt;p&gt;Future work involves a chassis overhaul (for better portability), improved lightproofness (which should fix contrast issues), and a more stable/less noisy power supply (which should reduce the severe noise issue visible in pictures).&lt;/p&gt;
 

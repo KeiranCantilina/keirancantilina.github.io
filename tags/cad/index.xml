@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2019</copyright>
-    <lastBuildDate>Tue, 19 Feb 2019 00:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Thu, 14 Mar 2019 00:00:00 +0100</lastBuildDate>
     
 	<atom:link href="https://keirancantilina.github.io/tags/cad/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Musical Rocket Bells</title>
+      <link>https://keirancantilina.github.io/project/rocket-bells/</link>
+      <pubDate>Thu, 14 Mar 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://keirancantilina.github.io/project/rocket-bells/</guid>
+      <description>Timeline July 2017
+Project Background One day, my friend Dane told me about a dream he had. It was long and convoluted (as dreams often are), but the part that stuck out to me was a scene he described where I ran around a space rocket nozzle factory playing the nozzles like bells.
+As a person that plays real non-dream bells semi-professionally, I became intensely curious: how exactly would it sound if I was in a rocket nozzle factory playing the nozzles like bells?</description>
+    </item>
     
     <item>
       <title>Giant Wind Chimes</title>
@@ -24,24 +35,13 @@ These windchimes are designed to have EXTREMELY long sustain (&amp;gt;30 sec) an
     </item>
     
     <item>
-      <title>Musical Rocket Bells</title>
-      <link>https://keirancantilina.github.io/project/rocket-bells/</link>
-      <pubDate>Tue, 19 Feb 2019 00:00:00 +0100</pubDate>
-      
-      <guid>https://keirancantilina.github.io/project/rocket-bells/</guid>
-      <description>Timeline July 2017
-Project Background One day, my friend Dane told me about a dream he had. It was long and convoluted (as dreams often are), but the part that stuck out to me was a scene he described where I ran around a space rocket nozzle factory playing the nozzles like bells.
-As a person that plays real non-dream bells semi-professionally, I became intensely curious: how exactly would it sound if I was in a rocket nozzle factory playing the nozzles like bells?</description>
-    </item>
-    
-    <item>
       <title>Ultimate Deathtrap: The Danger Scooter</title>
       <link>https://keirancantilina.github.io/project/electric-scooter/</link>
       <pubDate>Mon, 18 Feb 2019 00:00:00 +0100</pubDate>
       
       <guid>https://keirancantilina.github.io/project/electric-scooter/</guid>
       <description>Timeline Feb 2017 - Current
-Project Description This project was spawned by a desire to make my daily commute to class faster. Being a poor grad student, paying for a campus parking pass was out of the question. I could have bought a bike, but when I found an old 80s kick scooter on Craigslist, I couldn&amp;rsquo;t resist the temptation to build something ridiculous.
+Project Background This project was spawned by a desire to make my daily commute to class faster. Being a poor grad student, paying for a campus parking pass was out of the question. I could have bought a bike, but when I found an old 80s kick scooter on Craigslist, I couldn&amp;rsquo;t resist the temptation to build something ridiculous.
 Project Description The build is fairly simple: a brushless hubmotor+wheel rescued from a dumpster replaces the rear wheel of the scooter.</description>
     </item>
     
