@@ -65,8 +65,8 @@ function OBJViewer(elem,model,mtlsrc){
 			.load(model, function ( object ) {
 				
 				// Position object and add to scene
-				object.position.y = - 0.95;
-				object.scale.setScalar( 0.01 );
+				object.position.y = 0;
+				object.scale.setScalar( 0.001 );
 				scene.add( object );
 				controls.update();
 	
