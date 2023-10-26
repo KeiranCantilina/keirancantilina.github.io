@@ -1,7 +1,6 @@
 // Written by Keiran Cantilina 
 // 2023-10-25
 
-import { OBJLoader } from './objloader.js'
 import { MTLLoader } from './mtlloader.js'
 
 // Interface with html
@@ -48,7 +47,7 @@ function OBJViewer(elem,model,mtlsrc){
 		materials.preload();
 		
 		// Load OBJ File (using loaded MTL file materials)
-		new OBJLoader()
+		new THREE.OBJLoader()
 			.setMaterials( materials )
 			.load(model, function ( object ) {
 				
