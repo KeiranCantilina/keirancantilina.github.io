@@ -1,14 +1,16 @@
 // Written by Keiran Cantilina 
 // 2023-10-25
 
+import * as THREE from './three.module.js';
+
 import { MTLLoader } from './mtlloader.js'
 import { OBJLoader } from './objloader.js'
 import {OrbitControls } from './orbitcontrols.js'
 
 // Globals
-var camera=new PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 20 );
-var scene=new Scene();
-var renderer = new WebGLRenderer( { antialias: true, alpha:true} );
+var camera=new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 20 );
+var scene=new THREE.Scene();
+var renderer = new THREE.WebGLRenderer( { antialias: true, alpha:true} );
 
 
 // Interface with html
@@ -37,7 +39,7 @@ function OBJViewer(elem,model,mtlsrc){
 	camera.position.z = 2.5;
 	
 	// Config Scene and Lighting
-	camera.add(new HemisphereLight(0xffffff,0x080820,1.5));
+	camera.add(new THREE.HemisphereLight(0xffffff,0x080820,1.5));
 	scene.add( camera );
 	
 	// Log loading progress
