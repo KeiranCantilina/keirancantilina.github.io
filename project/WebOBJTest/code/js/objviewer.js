@@ -1,3 +1,7 @@
+// Written by Keiran Cantilina 
+// 2023-10-25
+
+// Interface with html
 function OBJViewerEnable(classname){
 	var models=document.getElementsByClassName(classname);
 	for(var i=0;i<models.length;i++){
@@ -6,10 +10,14 @@ function OBJViewerEnable(classname){
 }
 
 function OBJViewer(elem,model,mtlsrc){
-	if(!WEBGL.isWebGLAvailable()){
-		elem.appendChild(WEBGL.getWebGLErrorMessage());
-		return;
-	}
+	
+	// Throw error message if no webgl
+	//if(!WEBGL.isWebGLAvailable()){
+	//	elem.appendChild(WEBGL.getWebGLErrorMessage());
+	//	return;
+	//}
+	
+	// Make renderer, camera, and scene objects and configure them
 	var renderer=new THREE.WebGLRenderer({antialias:true,alpha:true});
 	var camera=new THREE.PerspectiveCamera(50,elem.clientWidth/elem.clientHeight,1,1000);
 	renderer.setSize(elem.clientWidth,elem.clientHeight);
@@ -32,12 +40,13 @@ function OBJViewer(elem,model,mtlsrc){
 	new THREE.MTLLoader().load(mtlsrc, function ( materials ) {
 
 		materials.preload();
-		// Load OBJ File (using loaded MTL file materials)
 		
+		// Load OBJ File (using loaded MTL file materials)
 		new THREE.OBJLoader()
 			.setMaterials( materials )
 			.load(model, function ( object ) {
-
+				
+				// Position object and add to scene
 				object.position.y = - 0.95;
 				object.scale.setScalar( 0.01 );
 				scene.add( object );
@@ -51,11 +60,15 @@ function OBJViewer(elem,model,mtlsrc){
 
 				//
 
+	// Make sure we resize with window resizing
 	window.addEventListener( 'resize', onWindowResize );
+	
+	// Spinny time
 	animate();
 
 }
 
+// Window resize function
 function onWindowResize() {
 
 	camera.aspect = window.innerWidth / window.innerHeight;
@@ -74,4 +87,5 @@ function animate() {
 
 }
 
+// Make sure we run when the window loads
 window.onload=function(){OBJViewerEnable("objviewer");}
