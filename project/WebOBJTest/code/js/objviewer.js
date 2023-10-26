@@ -3,7 +3,10 @@
 
 import { MTLLoader } from './mtlloader.js'
 
-let camera, scene, renderer;
+var camera=new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 20 );
+var scene=new THREE.Scene();
+var renderer = new THREE.WebGLRenderer( { antialias: true, alpha:true} );
+
 
 // Interface with html
 function OBJViewerEnable(classname){
@@ -28,11 +31,10 @@ function OBJViewer(elem,model,mtlsrc){
 	
 	// Make camera and configure
 	
-	var camera=new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 20 );
 	camera.position.z = 2.5;
 	
 	// Create Scene and Lighting
-	var scene=new THREE.Scene();
+	
 	camera.add(new THREE.HemisphereLight(0xffffff,0x080820,1.5));
 	scene.add( camera );
 	
@@ -58,7 +60,7 @@ function OBJViewer(elem,model,mtlsrc){
 		} );
 
 	// Create renderer and config controls
-	renderer = new THREE.WebGLRenderer( { antialias: true, alpha:true} );
+	
 	renderer.setPixelRatio( window.devicePixelRatio );
 	renderer.setSize( window.innerWidth, window.innerHeight );
 	document.body.appendChild( renderer.domElement );
