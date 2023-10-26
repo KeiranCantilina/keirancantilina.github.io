@@ -2,6 +2,7 @@
 // 2023-10-25
 
 import { MTLLoader } from './mtlloader.js'
+import { OBJLoader } from './objloader.js'
 
 // Globals
 var camera=new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 20 );
@@ -31,12 +32,10 @@ function OBJViewer(elem,model,mtlsrc){
 		return;
 	}
 	
-	// Make camera and configure
-	
+	// Configure camera
 	camera.position.z = 2.5;
 	
-	// Create Scene and Lighting
-	
+	// Config Scene and Lighting
 	camera.add(new THREE.HemisphereLight(0xffffff,0x080820,1.5));
 	scene.add( camera );
 	
@@ -58,7 +57,7 @@ function OBJViewer(elem,model,mtlsrc){
 		materials.preload();
 		
 		// Load OBJ File (using loaded MTL file materials)
-		new THREE.OBJLoader()
+		new OBJLoader()
 			.setMaterials( materials )
 			.load(model, function ( object ) {
 				
