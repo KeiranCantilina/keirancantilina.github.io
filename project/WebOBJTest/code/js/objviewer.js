@@ -1,8 +1,8 @@
 // Written by Keiran Cantilina 
 // 2023-10-25
 
-import OBJLoader from '.\objloader.js'
-import MTLLoader from '.\mtlloader.js'
+import OBJLoader from './objloader.js'
+import MTLLoader from './mtlloader.js'
 
 // Interface with html
 function OBJViewerEnable(classname){
