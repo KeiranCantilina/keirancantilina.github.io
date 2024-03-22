@@ -1,0 +1,602 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+    <title>ChatGPT - Home Index</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <link rel="icon" type="image/ico" href="/ChatGPT/favicon.ico">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    
+    <meta name="apple-mobile-web-app-title" content="CCF ChatGPT" />
+
+    <!-- Local Style Sheet -->
+    
+    
+    <!-- Application Template Style Sheet -->
+<link href="/ChatGPT/Content/bootstrap.css" rel="stylesheet" type="text/css" />
+
+
+<!-- Jquery UI CSS- Bootstrap theme (from download) -->
+<link href="https://iweb4.ccf.org/CSSTemplates/JQueryUI/v1.9.2/JqueryUI.min.css" rel="stylesheet" type="text/css" />
+
+<link href="/ChatGPT/Content/bootstrap-theme.min.css" rel="stylesheet" type="text/css" />
+<link href="/ChatGPT/Scripts/tablesorter/css/theme.bootstrap.min.css" rel="stylesheet" />
+<link href="/ChatGPT/Content/CCBootstrap3.min.css" rel="stylesheet" type="text/css" />
+<link href="/ChatGPT/Content/Site.css" rel="stylesheet" type="text/css" />
+
+<script src="/ChatGPT/Scripts/jquery-3.7.1.min.js" type="text/javascript"></script>
+<script src="/ChatGPT/Scripts/jquery-ui-1.11.4.min.js" type="text/javascript"></script>
+
+<script src="/ChatGPT/Scripts/bootstrap.js"></script>
+
+<!-- Jquery Validators -->
+<script src="/ChatGPT/Scripts/jquery.validate.min.js" type="text/javascript"></script>
+<script src="/ChatGPT/Scripts/jquery.validate.unobtrusive.min.js"></script>
+
+<script src="//intranet.ccf.org/scripts/MicrosoftJqueryUnobtrusiveValidation/v3.0/BootstrapFix.min.js"></script>
+<script src="/ChatGPT/Content/Scripts/Bootstrap3Helpers.js"></script>
+<!-- JQuery.JSON  -->
+
+
+<!-- this should be referenced after validators and bootstrap -->
+<!-- Bootstrap styling fix JQuery validators -->
+
+
+    <script>
+	window.onerror = function (msg, url, line, col, error) {
+		//limit logging / notification to onerror.max times
+		if (onerror.num++ >= onerror.max) {
+			return false;
+		}
+
+		// Note that col & error are new to the HTML 5 spec and may not be
+		// supported in every browser.
+		var extra = !col ? '' : '\ncolumn: ' + col;
+		extra += !error ? '' : '\nerror: ' + error;
+
+		// You can view the information in an alert to see things working like this:
+		//alert("Error: " + msg + "\nurl: " + url + "\nline: " + line + extra);
+
+		//log error to ELMAH
+		$.get("/ChatGPT/Error/LogJavaScriptError", { Message: msg, Url: url, LineNumber: line, Column: col, ErrorObject: error });
+
+		//var suppressErrorAlert = true;
+		//// If you return true, then error alerts (like in older versions of Internet Explorer) will be suppressed.
+		//return suppressErrorAlert;
+    };
+    onerror.max = 3; //maximum errors to log per page load
+    onerror.num = 0;
+</script>
+
+    
+    
+
+</head>
+<body style="-webkit-text-size-adjust: 100%;font-size:16px;">
+     
+	<div class="page">
+		
+
+<nav class="navbar navbar-default navbar-fixed-top header" id="header" role="navigation">
+	<!-- Brand and toggle get grouped for better mobile display -->
+
+	<div class="navbar-header">
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+		<a class="navbar-brand" title="Intranet Homepage" href="http://intranet.ccf.org/">
+			<img src="https://intranet.ccf.org/images/CC_Black.png" class="ccLogoSize" alt="" />
+		</a>
+
+
+		<ul class="nav navbar-nav">
+
+			<li class="dropdown hidden-xs">
+				<a class="dropdown-toggle navbar-brand titleBrand"
+				   
+				   data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ChatGPT<span class="caret hidden-xs"></span></a>
+
+                <ul class="dropdown-menu hidden-xs">
+                    <li class="hidden-xs"> <a href="/ChatGPT/">Home</a></li>
+                    <li class="hidden-xs"> <a href="/ChatGPT/Home/Generative_AI_Guidance">Guidance Doc</a></li>
+                    <li class="hidden-xs"> <a href="/ChatGPT/Home/About">About</a></li>
+                </ul>
+			</li>
+		</ul>
+
+
+
+	</div>
+
+	<!-- Collect the nav links, forms, and other content for toggling -->
+	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav" id="topLeftMenu">
+            <li class="visible-xs"> <a href="/ChatGPT/">Home</a></li>
+            <li><a href="/ChatGPT/">New Chat</a></li>
+            <li><a href="/ChatGPT/Home/History">History</a></li>
+            <li> <a href="/ChatGPT/Home/Generative_AI_Guidance">Guidance Doc</a></li>
+            
+            <li class="visible-xs-block"> <a href="/ChatGPT/Home/About">About</a></li>
+
+        </ul>
+		<ul class="nav navbar-nav navbar-right" id="toprightmenu">
+			
+			<li>
+				<a href="/ChatGPT/Account/LogOff">Log Out</a>
+			</li>
+		</ul>
+
+	</div>
+
+	<div class="barBelowNavbar hidden-xs" style="height:30px; padding-top:2px;">
+		<div class="subMenuDivLeft">
+			
+			<span class="subMenuText" id="subMenuTextLeft">
+					Home: Index
+			</span>
+		</div>
+		<div class="subMenuDivRight">
+			
+			<span class="subMenuText" id="subMenuTextRight">
+CC\CANTILK			</span>
+		</div>
+	</div>
+
+
+</nav>
+
+
+		<div id="main" class="container">
+			
+
+
+
+
+
+
+<style>
+    dl {
+        font-size: 110%;
+    }
+
+    dd {
+        margin-left: 0;
+    }
+
+    dt a {
+        color: #428bca;
+    }
+
+    @media screen and (max-width: 768px) {
+        .messageInput {
+            width: 70%;
+        }
+    }
+    @media screen and (min-width: 769px) {
+        .messageInput {
+            width: 70%;
+            /*width: 80%;*/
+        }
+    }
+
+    input, textarea, select {
+      font-size: 16px;
+    }
+
+    /*@media screen (min-width: 769px) {
+      font-size: 14px;
+    }*/
+
+</style>
+<div>
+    <div id="myAlert" class="alert alert-info alert-dismissible noPrint">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <div>
+            
+
+            <p>
+    This version of GPT is based on the publicly released GPT-4 model and is not trained on any internal Cleveland Clinic data. Conversations within each chat remain within Cleveland Clinic control and on its network, which is secure and consistent with HIPAA obligations. Caregiver may use Cleveland Clinic data, including PHI, to ask general or very specific questions of this chat function to better understand the capability of GPT-4. Your access is subject to the <a href="/ChatGPT/Home/Generative_AI_Guidance">Generative AI Guidance</a>.
+</p><p>
+    However, if a Caregiver proposes any use of Cleveland Clinic data to specifically build and also deploy a model, such use must be approved through the AI Task Force (please provide request to <a href="mailto:aitaskforce@ccf.org?subject=ChatGPT%20Data%20Model">aitaskforce@ccf.org</a>). If approved, the Caregiver will be directed to the Azure AI Studio to develop this model.
+</p><p>
+    All submissions are logged to valid Cost Center keys for billing / tracking purposes. Cleveland Clinic may charge back to an individual’s cost center for access to this tool. The cost of each submission is based off of the number of tokens submitted (tokens are parts of a plain English sentence, typically words and punctuation that are converted into the tool and tracked by the length of Caregiver’s conversation).
+</p><p>
+    Disclaimer: The accuracy, completeness or adequacy of the generated content and results is not guaranteed. Further research to validate results is required. Generalized innovation and experimentation are encouraged and are generally acceptable. Generative AI needs to be considered a decision support tool and results must be considered incomplete without human independent review and judgement. The content generated by this GPT model is intended for informational purposes only. It should not be taken as professional advice or relied upon as a substitute for consultation with qualified individuals. Please provide feedback based on your experience:
+        <a href="https://forms.office.com/r/Yy0nW8KBNt" target="chatGPTFeedback">https://forms.office.com/r/Yy0nW8KBNt</a>
+</p>
+            
+            <a href="#" class="font-weight-bold" data-dismiss="alert" aria-label="close">Close</a>
+        </div>
+    </div>
+    <script>
+        $('.alert').on('closed.bs.alert', function () {
+            setResponseHeight();
+        })
+        let chatModels = {"Default":{"ChatGPTModelId":6,"ModelName":"Default","ApiKey":"c78de23d5c26430f9dcc8ca5f26c660e","BaseDomain":"https://openai-itd-data-prototype-ncus-001.openai.azure.com/","ApiVersion":"2023-08-01-preview","ModelId":"gpt-4","DeploymentId":"GPT4-NCUS-001","MaxCompletionTokens":2000,"Comments":"ChatGPT 4"}};
+    </script>
+    <h4 style="margin-top:0; margin-bottom:4px;">ChatGPT</h4>
+    <hr style="margin:4px 0 10px 0" />
+    
+        <input type="hidden" id="chatModelName" />
+    <div id="formElement">
+
+        <textarea placeholder="Enter message..." name="message" id="message" class="messageInput"></textarea>
+        <button type="button" id="sendButton" class="btn btn-primary" style="vertical-align:top">Send <span class='glyphicon glyphicon-send'></span> </button>
+    </div>
+    
+    <div id="responseareaContainer" style="height:300px;overflow-y:auto;border:1px solid #ddd;padding:4px;">
+        <div id="responsearea">
+            <span id="below"></span>
+        </div>
+        
+
+    </div>
+</div>
+
+<script>
+    const guid = '345483b2-7728-4141-a0c9-4d398bad7bd0';
+    function delay(milliseconds) {
+        return new Promise(resolve => {
+            setTimeout(resolve, milliseconds);
+        });
+    }
+
+    function isEmptyOrSpaces(str) {
+        return str === null || str.match(/^ *$/) !== null;
+    }
+
+    function setResponseHeight() {
+        var height =
+            $("#footer")[0].getBoundingClientRect().top -
+            $("#formElement")[0].getBoundingClientRect().top - 110;
+        $("#responseareaContainer").css("height", height);
+    }
+
+    async function typein(message, element, scrollToElement) {
+        var str = message;
+        $(element).text("");
+        for (let i = 0; i < message.length; i++) {
+            $(element).append(message[i]);
+            //scrollToElement.scrollIntoView(); //scroll down if needed
+            document.getElementById("responseareaContainer").scrollTo(0, document.getElementById("responseareaContainer").scrollHeight);
+            await delay(1);
+        }
+    }
+
+
+    $('#chatGPTForm').submit(false);
+
+        let messages = []
+    $("#sendButton").on("click", function () {
+        if (isEmptyOrSpaces($("#message").val())) { return; }
+        //replace the drop down with text
+        $("#chatModelName").hide();
+        $("#modelNameSpan").show().text($("#chatModelName").val());
+
+        localStorage.setItem('chatModelName', $("#chatModelName").val()); //save the last used to local storage
+
+        $("#myAlert").alert("close");
+        setResponseHeight();
+        const newDiv = $('<div style="white-space: pre-line; font-weight:bold; background-color:#EEEEEE;">');
+        $(newDiv).text($("#message").val());
+        $('#responsearea').append(newDiv);
+        const responseID = "response" + messages.length;
+        const responseDiv = $('<div id="' + responseID + '" style="white-space: pre-line;">');
+        $(responseDiv).html("<img src ='https://i.gifer.com/origin/34/34338d26023e5515f6cc8969aa027bca_w200.gif' height='20px'/> Working...");
+
+        $('#responsearea').append(responseDiv);
+
+        //$("#below")[0].scrollIntoView();
+        document.getElementById("responseareaContainer").scrollTo(0, document.getElementById("responseareaContainer").scrollHeight);
+
+        setResponseHeight();
+
+        messages.push($("#message").val());
+        $("#message").val("");
+
+
+        $.ajax({
+        url: '/ChatGPT/Home/_CallChatGPT',
+            type: "POST",
+            dataType: 'json',
+            data: {
+                messages: messages,
+                temperature: 0.5,
+                //maxTokens: 50,
+                n: 1,
+                chatGuid: guid,
+                chatModelName: $("#chatModelName").val(),
+            },
+            error: function (jqXHR, textStatus, errorThrown) {
+                alert("Error calling ChatGPT:  " + textStatus)
+            },
+
+            success: function (data) {
+                if (data.ErrorMessage) {
+                    typein(data.ErrorMessage, responseDiv, $("#below")[0]);
+                } else {
+                    typein(data.Message, responseDiv, $("#below")[0]);
+                }
+            }
+        })
+    })
+
+
+    $(document).ready(function () {
+        setResponseHeight();
+    });
+
+    window.addEventListener('resize', function (event) {
+        setResponseHeight();
+    }, true);
+
+    document.getElementById("responseareaContainer").scrollTo(0, document.getElementById("responseareaContainer").scrollHeight);
+    //$("#below")[0].scrollIntoView();
+</script>
+		</div>
+
+		
+		<div id="footer" class="navbar-fixed-bottom" role="navigation">
+    		<span id="footerText">©2023-2024 Cleveland Clinic | IT Web Services</span>
+		</div>
+
+	</div>
+	
+	
+<script type="text/javascript">
+	//initialize table sorter
+	function initializeTableSorter() {
+		// call the tablesorter plugin and apply the uitheme widget
+		$(".tablesorter").tablesorter({
+			// this will apply the bootstrap theme if "uitheme" widget is included
+			// the widgetOptions.uitheme is no longer required to be set
+			theme: "bootstrap"
+			, widthFixed: true
+			, headerTemplate: '{content} {icon}' // new in v2.7. Needed to add the bootstrap icon!
+
+			// widget code contained in the jquery.tablesorter.widgets.js file
+			// use the zebra stripe widget if you plan on hiding any rows (filter widget)
+			, widgets: [
+				"uitheme"
+				/*, "filter",*/
+				, "zebra"
+			]
+
+			, widgetOptions: {
+				// using the default zebra striping class name, so it actually isn't included in the theme variable above
+				// this is ONLY needed for bootstrap theming if you are using the filter widget, because rows are hidden
+				//				zebra: ["even", "odd"]
+
+				// reset filters button
+				//				filter_reset: ".reset",
+
+				// extra css class name (string or array) added to the filter element (input or select)
+				//				filter_cssFilter: "form-control",
+
+				// set the uitheme widget to use the bootstrap theme class names
+				// this is no longer required, if theme is set
+				// ,uitheme : "bootstrap"
+
+			}
+		})
+	}
+	if (typeof $.fn.tablesorter == 'function') {
+		initializeTableSorter();
+	} else {
+		//load tablesorter on demand
+		if ($("table.tablesorter").length) { //only load script if wysiwyg editor was used
+			$.ajax({
+				url: "/ChatGPT/scripts/tablesorter/js/jquery.tablesorter.combined.min.js",
+				dataType: "script",
+				cache: true
+			}).done(function () { initializeTableSorter(); });
+		}
+	}
+
+	//activate popovers
+	$('[data-toggle="popover"]').popover({ html: true });
+
+	//collapse
+	$(".panel-heading.collaspeEnabled").on("click", function () {
+		$(this).parent().find(".collapse").collapse("toggle");
+		if ($(this).find(".glyphicon.glyphicon-chevron-down").length) {
+			$(this).find(".glyphicon.glyphicon-chevron-down").removeClass("glyphicon-chevron-down").addClass("glyphicon-chevron-right")
+		}
+		else {
+			//change icon for all accordians in group
+			var accordian = $(this).closest(".panel").parent();
+			if ($(accordian).hasClass("panel-group")) {
+				//change icon for open panels in accordian
+				$(accordian).find(".glyphicon.glyphicon-chevron-down").removeClass("glyphicon-chevron-down").addClass("glyphicon-chevron-right");
+			}
+			$(this).find(".glyphicon.glyphicon-chevron-right").removeClass("glyphicon-chevron-right").addClass("glyphicon-chevron-down")
+		}
+		return false; //stop event propogation
+	});
+	$(".panel-heading.collaspeEnabled").find(":button,a").on("click", function (event) { event.stopImmediatePropagation(); });
+
+	//fix bootstrap 3 input error styling
+	$(".input-validation-error").closest(".form-group").addClass("has-error");
+
+	//attach date picker
+	if ($("input[type='date']").length && $("input[type='date']")[0].type !== 'date') {
+		$("input[type='date']")
+			.attr("autocomplete", "off")
+			.datepicker();
+	}
+
+	//initialize Twitter Bootstrap tooltips
+    //$("[rel=tooltip]").tooltip({ 'trigger': 'hover' });
+    $("[rel=tooltip]").tooltip({ 'trigger': 'focus' });
+
+    //add tooltip for focus on input fields enclosed within a div that has a tooltip
+    $("div[rel=tooltip]")
+        .find("input")
+        .focus(function () { $(this).parents("[rel=tooltip]").tooltip("show"); })
+        .blur(function () { $(this).parents("[rel=tooltip]").tooltip("hide"); });
+
+    //add validate to field change.  This causes the field to highlight when tabbing through a required field.
+    $("input").bind('change', function () { // paste blur
+        $(this)
+            .parents('form')
+            .validate()
+//                .element(this);
+    });
+
+	//tinyMCE (WYSIWYG) editor
+	function initializeTinyMCE() {
+		tinymce.baseURL = '/ChatGPT/Scripts/tinymce';// trailing slash important
+
+		var tinyMCEMenuData = new Object();// = $("#" + this.id).data("mcemenu1");
+		var tinyMCEToolbarData = new Object();// = $("#" + this.id).data("mcemenu1");
+
+
+		tinymce.init({
+			selector: 'textarea.tinyMCE',
+			min_height: 50,
+			height: 50,
+			branding: false,
+			resize : "both",
+			autoresize_min_height: 50,
+			autoresize_max_height: 250,
+			autoresize_bottom_margin: 20,
+			content_style: "div {font-family:helvetica,arial,sans-serif;font-size:14px;}",
+			//style_formats: [],
+			forced_root_block: 'div',
+			browser_spellcheck: true,
+			block_formats: null,
+			plugins: [
+				'advlist autolink lists link image charmap print preview anchor',
+				'searchreplace visualblocks code fullscreen	',
+				//'textcolor colorpicker',
+				'insertdatetime media table contextmenu paste code autoresize'
+			],
+			//| styleselect
+			toolbar: 'tb0 tb1 tb2 tb3 tb4 tb5 tb6 tb7 tb8 tb9 | insertfile undo redo  | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image ' //| forecolor backcolor fontselect fontsizeselect
+			,
+			setup: function (editor) {
+				tinyMCEMenuData[this.id] = new Object(); //store data in a global object because of onclick value problems
+				for (var i = 0; i < 10; i++) { //can have up to 10 submenus
+					var jsondata = $("#" + this.id).data("mcemenu" + i);
+
+					if (jsondata != undefined) {
+						var currentId = this.id;
+						var menuItems = new Array();
+						var context = jsondata.context;
+						if (!context) context = "insert";
+						for (var xy in jsondata.items) {
+							tinyMCEMenuData[this.id][xy] = jsondata.items[xy];
+							menuItems.push
+							({
+								text: xy,
+								onclick: function () {
+									var rootId = currentId;
+									var menuItemText = this.settings.text;
+									editor.insertContent(tinyMCEMenuData[rootId][menuItemText]);
+								}
+							});
+						}
+						editor.addMenuItem("menulist" + i, {
+							context: context,
+							text: jsondata.name,
+							icon: false,
+							menu: menuItems
+						});
+						editor.addMenuItem('menusep' + i, { text: '-', context: context });
+					}
+				}
+
+				tinyMCEToolbarData[this.id] = new Object(); //store data in a global object because of onclick value problems
+
+				for (var i = 0; i < 10; i++) { //can have up to 10 toolbar buttons
+					var jsondata = $("#" + this.id).data("mcetoolbar" + i);
+
+					if (jsondata != undefined) {
+						var currentId = this.id;
+						var menuItems = new Array();
+						for (var xy in jsondata.items) {
+							tinyMCEToolbarData[this.id][xy] = jsondata.items[xy];
+							menuItems.push
+							({
+								text: xy,
+								onclick: function () {
+									var rootId = currentId;
+									var menuItemText = this.settings.text;
+									editor.insertContent(tinyMCEToolbarData[rootId][menuItemText]);
+								}
+							});
+						}
+						editor.addButton('tb' + i, {
+							type: 'menubutton',
+							text: jsondata.name,
+							icon: false,
+							menu: menuItems
+						});
+
+					}
+				}
+			},
+		});
+	}
+	if (typeof (tinyMCE) != "undefined") {
+		initializeTinyMCE();
+	} else {
+		//load tinymce on demand
+		if ($("textarea.tinyMCE").length) { //only load script if wysiwyg editor was used
+			$.ajax({
+				url: "/ChatGPT/Scripts/tinymce/tinymce.min.js",
+				dataType: "script",
+				cache: true
+			}).done(function () { initializeTinyMCE(); });
+		}
+	}
+
+
+
+	//Ajax error handling.  Ajax permissions issues should not redirect to the login page.  This code displays an alert, and conditionally reloads the current base page.
+    $(document).ajaxError(function (e, xhr, settings, exception) {
+        if (xhr.status == 403) {
+        	var response = $.parseJSON(xhr.responseText);
+        	//only prompt for reload if not logged in
+        	if (response.IsAuthenticated) { alert("Access Denied Error."); }
+        	//only prompt for page reload.
+			else if (!response.IsAuthenticated && confirm("Access Denied Error.  Possible login timeout. Reload the current page?")) location.reload(); 
+        }
+        else {
+        	alert("An error has occurred during your request.");
+        }
+    });
+
+	//table filter
+    $(".tableFilter").closest("table").on("keyup change", "input.tableFilter", function () {
+    	var theTable = $(this).closest("table");
+    	var theRows = $(theTable).find("tbody tr");
+    	var searchval = this.value.toLowerCase();
+    	$(theRows).hide();
+
+    	$(theRows)
+			.filter(function () { return $(this).text().toLowerCase().indexOf(searchval) >= 0; })
+			.closest("tr")
+			.show();
+    	;
+    });
+
+    $("input.tableFilter").change(); //apply initial filter    		
+
+
+</script>
+
+
+
+</body>
+</html>
+
+
