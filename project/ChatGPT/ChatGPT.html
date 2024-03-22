@@ -306,7 +306,8 @@ CC\CANTILK			</span>
         $.ajax({
         url: 'https://iwebapps.ccf.org/ChatGPT/Home/_CallChatGPT',
             type: "POST",
-            dataType: 'json',
+			crossDomain: true,
+            dataType: 'jsonp',
             data: {
                 messages: messages,
                 temperature: 0.5,
